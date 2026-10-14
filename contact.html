@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &amp; Restoration Enquiry — Sylvan &amp; Soil</title>
+  <meta name="description" content="Get in touch with Sylvan &amp; Soil Native Plant Nursery. Request site assessments, contract propagation quotes, or native plant availability lists.">
+  
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" id="mainBootstrapCss">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- Custom Core & Responsive Styles -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ================= ATTRACTIVE BOTANICAL PAGE LOADER ================= -->
+  <div id="pageLoader" class="page-loader" aria-hidden="true">
+    <div class="loader-container">
+      <div class="loader-emblem-halo">
+        <div class="loader-orbit-ring"></div>
+        <div class="loader-pulse-glow"></div>
+        <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Logo Emblem" class="loader-emblem-art">
+      </div>
+      <div class="loader-brand-title">
+        <span class="brand-sylvan">Sylvan</span><span class="brand-amp">&amp;</span><span class="brand-soil">Soil</span>
+      </div>
+      <div class="loader-tagline">Native Plant Nursery &amp; Habitat Restoration</div>
+      <div class="loader-progress-track">
+        <div class="loader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-xl">
+      <div class="site-container">
+        
+        <!-- Brand Logo -->
+        <a class="brand-logo" href="index.html">
+          <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Botanical Emblem" class="brand-emblem-art">
+          <span class="brand-text-col">
+            <span class="brand-heading"><span class="brand-sylvan">Sylvan</span> <span class="brand-amp">&amp;</span> <span class="brand-soil">Soil</span></span>
+            <span class="brand-caption">Native Plant Nursery &amp; Restoration</span>
+          </span>
+        </a>
+
+        <!-- Desktop Navigation Links (>= 1200px) -->
+        <div class="collapse navbar-collapse justify-content-center d-none d-xl-flex" id="desktopNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item " href="index.html">Home 1 — Classic Nursery</a></li>
+                <li><a class="dropdown-item " href="home-2.html">Home 2 — Ecological Restoration</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="products.html">Native Plants</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="habitat-restoration.html">Habitat Restoration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="planting-guide.html">Planting Guide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Header Actions: Theme, LTR/RTL, CTA, Mobile Trigger -->
+        <div class="header-actions">
+          <!-- LTR/RTL Toggle (Desktop Only) -->
+          <button type="button" class="nav-dir-btn d-none d-xl-inline-flex" data-dir-switch aria-label="Toggle text direction (LTR / RTL)" title="Switch Layout Direction">
+            <span class="dir-toggle-track">
+              <span class="dir-toggle-opt dir-opt-ltr active">LTR</span>
+              <span class="dir-toggle-opt dir-opt-rtl">RTL</span>
+            </span>
+          </button>
+
+          <!-- Dark Mode Toggle (Desktop Only) -->
+          <button type="button" class="nav-icon-btn d-none d-xl-inline-flex" data-theme-switch aria-label="Toggle light and dark mode" title="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+
+          <!-- Desktop Consultation CTA (Desktop Only) -->
+          <a class="btn-botanical btn-sm-botanical d-none d-xl-inline-flex" href="contact.html"><i class="bi bi-compass"></i> Consult</a>
+
+          <!-- Mobile Menu Hamburger Trigger (Mobile & Tablet < 1200px Only) -->
+          <button type="button" class="nav-icon-btn mobile-nav-trigger d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Open navigation menu">
+            <i class="bi bi-list fs-4"></i>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+      <!-- ================= MOBILE MENU OFFCANVAS ================= -->
+  <div class="offcanvas offcanvas-end mobile-menu-offcanvas" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header border-bottom">
+      <a class="brand-logo" href="index.html">
+        <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Botanical Emblem" class="brand-emblem-art">
+        <span class="brand-text-col">
+          <span class="brand-heading"><span class="brand-sylvan">Sylvan</span> <span class="brand-amp">&amp;</span> <span class="brand-soil">Soil</span></span>
+          <span class="brand-caption">Native Plant Nursery &amp; Restoration</span>
+        </span>
+      </a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <div class="mobile-nav-wrapper">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item">
+            <a class="mobile-nav-link d-flex align-items-center justify-content-between collapsed " data-bs-toggle="collapse" href="#mobileHomeSub" role="button" aria-expanded="false">
+              <span><i class="bi bi-house-door me-2 text-forest"></i> Home</span>
+              <i class="bi bi-chevron-down small"></i>
+            </a>
+            <div class="collapse" id="mobileHomeSub">
+              <div class="ps-3 pt-2 pb-1 d-flex flex-column gap-1 border-start ms-3 my-1">
+                <a class="mobile-sublink " href="index.html"><i class="bi bi-flower2 me-2"></i> Home 1 — Classic Nursery</a>
+                <a class="mobile-sublink " href="home-2.html"><i class="bi bi-tree me-2"></i> Home 2 — Ecological Restoration</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="products.html"><i class="bi bi-grid me-2 text-forest"></i> Native Plants</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="habitat-restoration.html"><i class="bi bi-shield-check me-2 text-forest"></i> Habitat Restoration</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="projects.html"><i class="bi bi-images me-2 text-forest"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="planting-guide.html"><i class="bi bi-journal-bookmark me-2 text-forest"></i> Planting Guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="about.html"><i class="bi bi-info-circle me-2 text-forest"></i> About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link active" href="contact.html"><i class="bi bi-envelope me-2 text-forest"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile Actions Panel (Buttons Only, Perfectly Centered) -->
+      <div class="mobile-menu-footer pt-3 border-top mt-4">
+        <div class="mobile-controls-panel mb-3 d-flex align-items-center justify-content-center gap-3 py-2">
+          <!-- Theme Toggle Button -->
+          <button type="button" class="nav-icon-btn" data-theme-switch aria-label="Toggle light and dark mode" title="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+
+          <!-- LTR / RTL Direction Toggle Button -->
+          <button type="button" class="nav-dir-btn" data-dir-switch aria-label="Toggle text direction (LTR / RTL)" title="Switch Layout Direction">
+            <span class="dir-toggle-track">
+              <span class="dir-toggle-opt dir-opt-ltr active">LTR</span>
+              <span class="dir-toggle-opt dir-opt-rtl">RTL</span>
+            </span>
+          </button>
+        </div>
+
+        <a class="btn-botanical w-100 justify-content-center py-2" href="contact.html">
+          <i class="bi bi-compass"></i> Schedule Consultation
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ================= SECTION 1: CONTACT HERO (SHARED .page-hero HEIGHT) ================= -->
+    <section class="page-hero" style="background-image: url('assets/images/hero/hero-contact.jpg');" id="contactHero">
+      <div class="page-hero-overlay"></div>
+      <div class="site-container page-hero-content">
+        <nav class="page-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="bi bi-chevron-right small"></i>
+          <span>Contact Us</span>
+        </nav>
+        <h1>Connect with Our Botanists</h1>
+        <p class="lead">
+          Reach out for plant availability inquiries, contract seed growing, site visits, or comprehensive habitat restoration quotes.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 2: CONTACT INFORMATION & NURSERY HOURS ================= -->
+    <section class="site-section bg-surface" id="contactInfo">
+      <div class="site-container">
+        
+        <div class="row g-4">
+          
+          <!-- Location -->
+          <div class="col-md-4">
+            <div class="p-4 rounded-4 bg-muted-soft border border-subtle h-100">
+              <div class="brand-mark mb-3" style="width:46px;height:46px;background:var(--color-forest);">
+                <i class="bi bi-geo-alt-fill fs-4"></i>
+              </div>
+              <h4 class="font-display mb-2">Nursery &amp; Growing Grounds</h4>
+              <p class="text-muted small mb-0">
+                <strong>Address:</strong><br>
+                482 Sylvan Way, Ecological Valley, NY 12508<br>
+                <span class="d-block mt-2 text-success"><i class="bi bi-pin-map-fill me-1"></i> Public retail pick-up by advance appointment</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="col-md-4">
+            <div class="p-4 rounded-4 bg-muted-soft border border-subtle h-100">
+              <div class="brand-mark mb-3" style="width:46px;height:46px;background:var(--color-forest);">
+                <i class="bi bi-clock-fill fs-4"></i>
+              </div>
+              <h4 class="font-display mb-2">Operating Hours</h4>
+              <p class="text-muted small mb-0">
+                <strong>Monday – Friday:</strong> 8:00 AM – 5:00 PM EST<br>
+                <strong>Saturday (Seasonal):</strong> 9:00 AM – 3:00 PM EST<br>
+                <strong>Sunday:</strong> Closed (Field Restoration Teams Active)
+              </p>
+            </div>
+          </div>
+
+          <!-- Phone & Direct Channels -->
+          <div class="col-md-4">
+            <div class="p-4 rounded-4 bg-muted-soft border border-subtle h-100">
+              <div class="brand-mark mb-3" style="width:46px;height:46px;background:var(--color-forest);">
+                <i class="bi bi-telephone-fill fs-4"></i>
+              </div>
+              <h4 class="font-display mb-2">Direct Inquiries</h4>
+              <p class="text-muted small mb-0">
+                <strong>General Email:</strong> hello@sylvanandsoilnursery.com<br>
+                <strong>Restoration Desk:</strong> restoration@sylvanandsoilnursery.com<br>
+                <strong>Telephone:</strong> +1 (555) 789-3210
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3: ENQUIRY FORM ================= -->
+    <section class="site-section bg-muted-soft" id="enquiryFormSection">
+      <div class="site-container">
+        
+        <div class="site-section-head text-center">
+          <span class="site-eyebrow"><i class="bi bi-pencil-square"></i> Project Consultation</span>
+          <h2 class="display-5">Request a Project Consultation or Plant Quote</h2>
+          <p class="text-muted">Fill out the questionnaire below with your site parameters for tailored guidance.</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-9">
+            <div class="form-card">
+              
+              <div class="form-feedback-alert d-none" role="alert"></div>
+
+              <form id="contactForm" data-validate novalidate>
+                <div class="row g-3">
+                  
+                  <!-- Full Name -->
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                    <input type="text" id="fullName" class="form-control" placeholder="e.g. Eleanor Vance" required>
+                    <div class="invalid-feedback">Please enter your full name.</div>
+                  </div>
+
+                  <!-- Email Address -->
+                  <div class="col-md-6">
+                    <label for="emailAddr" class="form-label">Email Address <span class="text-danger">*</span></label>
+                    <input type="email" id="emailAddr" class="form-control" placeholder="e.g. eleanor@example.com" required>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+
+                  <!-- Phone Number (Optional) -->
+                  <div class="col-md-6">
+                    <label for="phoneNumber" class="form-label">Phone Number <span class="text-muted small">(Optional)</span></label>
+                    <input type="tel" id="phoneNumber" class="form-control" placeholder="e.g. (555) 000-0000">
+                  </div>
+
+                  <!-- Enquiry Type -->
+                  <div class="col-md-6">
+                    <label for="enquiryType" class="form-label">Enquiry Type <span class="text-danger">*</span></label>
+                    <select id="enquiryType" class="form-select" required>
+                      <option value="">Select an Enquiry Type...</option>
+                      <option value="plant-order">Native Plant Plugs &amp; Seed Order</option>
+                      <option value="meadow-restoration">Meadow Restoration Project</option>
+                      <option value="pollinator-habitat">Pollinator Habitat Design</option>
+                      <option value="wetland-restoration">Wetland / Rain Garden Solution</option>
+                      <option value="woodland-stewardship">Woodland Understory Restoration</option>
+                      <option value="wholesale-contract">Wholesale Contract Growing</option>
+                      <option value="general">General Nursery Question</option>
+                    </select>
+                    <div class="invalid-feedback">Please choose an enquiry category.</div>
+                  </div>
+
+                  <!-- Region / Project Location -->
+                  <div class="col-md-6">
+                    <label for="projectLocation" class="form-label">Project Location or County <span class="text-danger">*</span></label>
+                    <input type="text" id="projectLocation" class="form-control" placeholder="e.g. Dutchess County, NY" required>
+                    <div class="invalid-feedback">Please specify your project location.</div>
+                  </div>
+
+                  <!-- Project Size (Optional) -->
+                  <div class="col-md-6">
+                    <label for="projectSize" class="form-label">Approximate Project Size <span class="text-muted small">(Optional)</span></label>
+                    <select id="projectSize" class="form-select">
+                      <option value="">Select Site Scale...</option>
+                      <option value="garden">Home Garden (&lt; 1,000 sq ft)</option>
+                      <option value="quarter-acre">Quarter to Half Acre</option>
+                      <option value="1-5-acres">1 to 5 Acres</option>
+                      <option value="5-20-acres">5 to 20 Acres</option>
+                      <option value="20-plus-acres">20+ Acres / Municipal Scale</option>
+                    </select>
+                  </div>
+
+                  <!-- Plant or Service of Interest -->
+                  <div class="col-12">
+                    <label for="interestDetails" class="form-label">Specific Species or Services of Interest</label>
+                    <input type="text" id="interestDetails" class="form-control" placeholder="e.g. Purple Coneflower, Little Bluestem, stream bio-stabilization">
+                  </div>
+
+                  <!-- Message -->
+                  <div class="col-12">
+                    <label for="projectMessage" class="form-label">Project Details &amp; Soil / Light Notes <span class="text-danger">*</span></label>
+                    <textarea id="projectMessage" rows="4" class="form-control" placeholder="Tell us about existing vegetation, soil conditions (wet, dry, rocky), sunlight exposure, and your timeline..." required></textarea>
+                    <div class="invalid-feedback">Please provide brief details about your property or project.</div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="col-12 text-center pt-3">
+                    <button type="submit" class="btn-botanical w-100 py-3 fs-6">
+                      <i class="bi bi-send-fill"></i> Submit Consultation Request
+                    </button>
+                    <small class="text-muted d-block mt-2">
+                      <i class="bi bi-shield-check me-1"></i> We reply with initial botanical guidance within 1 business day. No spam guarantee.
+                    </small>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4: HOW WE CAN HELP ================= -->
+    <section class="site-section bg-surface" id="howWeHelp">
+      <div class="site-container">
+        
+        <div class="site-section-head text-center">
+          <span class="site-eyebrow"><i class="bi bi-diagram-2"></i> Client Pathways</span>
+          <h2 class="display-5">How We Can Help</h2>
+          <p class="text-muted">From backyard re-wilders to municipal conservation authorities, we provide dedicated support.</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <div class="row g-4">
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="p-4 rounded-4 bg-muted-soft border border-subtle h-100 text-center">
+              <div class="brand-mark mx-auto mb-3" style="width:48px;height:48px;background:var(--color-forest);">
+                <i class="bi bi-flower1 fs-4"></i>
+              </div>
+              <h5 class="font-display mb-2">Native Plant Selection</h5>
+              <p class="text-muted small mb-0">Assistance selecting genetically appropriate species for specific slopes, clay soils, and pollinator gardens.</p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="p-4 rounded-4 bg-muted-soft border border-subtle h-100 text-center">
+              <div class="brand-mark mx-auto mb-3" style="width:48px;height:48px;background:var(--color-forest);">
+                <i class="bi bi-box-seam fs-4"></i>
+              </div>
+              <h5 class="font-display mb-2">Bulk &amp; Plug Orders</h5>
+              <p class="text-muted small mb-0">Trays of 50 deep-cell plugs and pure live seed (PLS) blends for large-scale landscaping installations.</p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="p-4 rounded-4 bg-muted-soft border border-subtle h-100 text-center">
+              <div class="brand-mark mx-auto mb-3" style="width:48px;height:48px;background:var(--color-forest);">
+                <i class="bi bi-compass fs-4"></i>
+              </div>
+              <h5 class="font-display mb-2">Restoration Consults</h5>
+              <p class="text-muted small mb-0">On-site ecological surveys, soil percolation testing, invasive mapping, and multi-year maintenance regimes.</p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="p-4 rounded-4 bg-muted-soft border border-subtle h-100 text-center">
+              <div class="brand-mark mx-auto mb-3" style="width:48px;height:48px;background:var(--color-forest);">
+                <i class="bi bi-chat-heart fs-4"></i>
+              </div>
+              <h5 class="font-display mb-2">General Inquiries</h5>
+              <p class="text-muted small mb-0">Questions regarding seasonal inventory availability, nursery pickup protocols, and educational workshops.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 5: FINAL CTA & COMPREHENSIVE FOOTER ================= -->
+    <section class="site-section section-cta bg-muted-soft" id="contactCtaFooter">
+      <div class="site-container">
+        
+        <div class="cta-banner">
+          <div class="row align-items-center justify-content-between g-4 position-relative" style="z-index: 2;">
+            <div class="col-lg-7">
+              <span class="badge bg-white text-dark font-display px-3 py-2 rounded-pill mb-2">
+                <i class="bi bi-tree-fill text-success"></i> Healthy Ecosystems Start Here
+              </span>
+              <h2>Start Your Land's Restoration Today</h2>
+              <p>
+                Partner with knowledgeable regional botanists dedicated to planting biodiversity that endures for generations.
+              </p>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+              <div class="cta-banner-btns">
+                <a href="products.html" class="btn btn-light text-dark fw-bold rounded-pill">
+                  <i class="bi bi-flower1 me-1"></i> Browse Native Catalog
+                </a>
+                <a href="projects.html" class="btn btn-outline-light fw-bold rounded-pill">
+                  <i class="bi bi-images me-1"></i> View Gallery
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= COMPREHENSIVE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="row g-4 g-lg-5">
+        
+        <div class="col-lg-4">
+          <a class="brand-logo text-white mb-3 d-inline-flex" href="index.html">
+            <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Botanical Emblem" class="brand-emblem-art">
+            <span class="brand-text-col">
+              <span class="brand-heading"><span class="brand-sylvan">Sylvan</span> <span class="brand-amp">&amp;</span> <span class="brand-soil">Soil</span></span>
+              <span class="brand-caption">Native Plant Nursery &amp; Restoration</span>
+            </span>
+          </a>
+          <p class="footer-brand-desc">
+            Specialist native plant nursery &amp; ecological restoration consultancy dedicated to fostering biodiverse regional habitats, living soils, and sustainable landscapes.
+          </p>
+          <div class="footer-social-wrap" aria-label="Social connections">
+            <a href="https://facebook.com" class="social-circle" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" class="social-circle" aria-label="Instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" class="social-circle" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" class="social-circle" aria-label="YouTube" target="_blank" rel="noopener"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-2">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Home 1</a></li>
+            <li><a href="home-2.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Home 2</a></li>
+            <li><a href="products.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Plants</a></li>
+            <li><a href="habitat-restoration.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Restoration</a></li>
+            <li><a href="projects.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Projects Gallery</a></li>
+            <li><a href="planting-guide.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Planting Guide</a></li>
+            <li><a href="about.html" class="footer-link"><i class="bi bi-chevron-right small"></i> About Us</a></li>
+            <li><a href="contact.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <h5>Native Plants</h5>
+          <ul class="footer-links">
+            <li><a href="products.html?type=wildflower" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Wildflowers</a></li>
+            <li><a href="products.html?type=grass" class="footer-link"><i class="bi bi-chevron-right small"></i> Grasses &amp; Sedges</a></li>
+            <li><a href="products.html?type=shrub" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Understory Shrubs</a></li>
+            <li><a href="products.html?type=tree" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Keystone Trees</a></li>
+            <li><a href="products.html?type=pollinator" class="footer-link"><i class="bi bi-chevron-right small"></i> Pollinator Host Plants</a></li>
+            <li><a href="products.html?type=wetland" class="footer-link"><i class="bi bi-chevron-right small"></i> Rain Garden &amp; Wetland</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Get In Touch</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <strong>Nursery &amp; Growing Grounds</strong><br>
+              482 Sylvan Way, Ecological Valley, NY 12508
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <div>+1 (555) 789-3210</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <div>hello@sylvanandsoilnursery.com</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Sylvan &amp; Soil Native Plant Nursery &amp; Habitat Restoration Services. All rights reserved.
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal" class="text-white text-opacity-75">Privacy Policy</a>
+          <span>·</span>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal" class="text-white text-opacity-75">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top-btn" id="backToTop" aria-label="Back to top of page" title="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-display" id="privacyModalLabel">Privacy Policy</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small text-muted">We respect your privacy and protect personal consultation inquiries.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-botanical btn-sm-botanical" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-display" id="termsModalLabel">Terms &amp; Conditions</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small text-muted">All nursery stock is regionally sourced and non-invasive.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-botanical btn-sm-botanical" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Application JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

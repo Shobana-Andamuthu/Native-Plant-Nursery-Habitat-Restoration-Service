@@ -1,0 +1,806 @@
+/* ===================================================================
+   SYLVAN & SOIL — RESPONSIVE STYLESHEET
+   Comprehensive Layout & Breakpoint System (200px to 2560px+)
+   =================================================================== */
+
+/* ================= 1. RESPONSIVE CARD GRIDS ================= */
+
+/* Default Desktop Card Grids (3 or 4 columns) */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 2vw, 1.75rem);
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.feature-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.region-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.habitat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+/* ================= 2. LARGE DESKTOPS & ULTRAWIDE (1440px to 2560px+) =================
+   Maintain strictly uniform container alignment between navbar, hero, cards, and footer */
+.site-container,
+.site-header .site-container {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-inline: auto !important;
+  padding-left: clamp(1rem, 2.5vw, 1.75rem) !important;
+  padding-right: clamp(1rem, 2.5vw, 1.75rem) !important;
+  padding-inline: clamp(1rem, 2.5vw, 1.75rem) !important;
+  box-sizing: border-box !important;
+}
+
+@media (min-width: 1920px) {
+  .hero-fullscreen-content {
+    max-width: 960px;
+  }
+  .hero-fullscreen-content h1 {
+    font-size: 4.5rem;
+  }
+}
+
+
+/* ================= 3. LAPTOPS / DESKTOPS (1024px to 1366px) ================= */
+@media (max-width: 1199.98px) {
+  .feature-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ================= 4. TABLET, IPAD & IPAD PRO (768px to 1199.98px) =================
+   MANDATORY STRICT REQUIREMENT:
+   "ipad ipad pro la ella 1 row ku max 2 cards matum vechuuru"
+   On all iPad & iPad Pro devices, strictly maximum two cards per row across every card grid!
+   ================================================================================== */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .category-pill-grid,
+  .category-grid,
+  .product-grid,
+  .service-grid,
+  .project-grid,
+  .step-grid,
+  .testimonial-grid,
+  .feature-grid-4,
+  .region-grid,
+  .habitat-grid,
+  .habitat-showcase-grid,
+  .process-grid-modern,
+  .team-grid,
+  .impact-grid,
+  .product-type-filter-grid,
+  .nursery-standards-grid,
+  .phenology-timeline-grid,
+  .guild-bundle-grid,
+  .restoration-showcase-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    align-items: stretch !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Max 2 cards per row on Bootstrap columns for iPad / iPad Pro */
+  .row-cols-md-3 > *,
+  .row-cols-md-4 > *,
+  .row-cols-lg-3 > *,
+  .row-cols-lg-4 > *,
+  .row-cols-lg-6 > *,
+  .row > .col-lg-3,
+  .row > .col-lg-4,
+  .row > .col-xl-3,
+  .row > .col-xl-4,
+  .row > .col-md-4,
+  .row > .col-md-3 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+  }
+
+  /* Split layout collapses into balanced stacks */
+  .hero-split-fullscreen {
+    min-height: auto !important;
+    padding: clamp(2.5rem, 5vw, 3.5rem) 0 !important;
+  }
+
+  .hero-split-fullscreen .row {
+    flex-direction: column !important;
+  }
+
+  .hero-split-image-wrap {
+    min-height: 380px !important;
+    max-height: 460px !important;
+    aspect-ratio: 16 / 10 !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  .editorial-media {
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-banner-btns {
+    flex-direction: row !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 1.25rem !important;
+    gap: 0.85rem !important;
+    flex-wrap: wrap !important;
+  }
+
+  .cta-banner-btns .btn {
+    flex: 1 1 200px !important;
+  }
+}
+
+/* ================= 5. PHABLET & MOBILE LANDSCAPE (576px to 767.98px) ================= */
+@media (max-width: 767.98px) {
+  :root {
+    --navbar-height: 70px;
+    --shared-page-hero-height: clamp(340px, 45vh, 420px);
+  }
+
+  .site-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  /* Category pills: 2 columns on mobile for compact elegant view */
+  .category-pill-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1.25rem !important;
+  }
+
+  .cat-pill-media {
+    border-radius: 22px !important;
+  }
+
+  .cat-pill-label {
+    font-size: 0.92rem !important;
+    white-space: normal !important;
+  }
+
+  /* Single Column Card Stacking */
+  .product-grid,
+  .category-grid,
+  .service-grid,
+  .project-grid,
+  .step-grid,
+  .process-grid-modern,
+  .testimonial-grid,
+  .feature-grid-4,
+  .region-grid,
+  .habitat-grid,
+  .habitat-showcase-grid,
+  .product-type-filter-grid,
+  .nursery-standards-grid,
+  .phenology-timeline-grid,
+  .guild-bundle-grid,
+  .restoration-showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .habitat-showcase-media {
+    width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
+    aspect-ratio: 16 / 10 !important;
+  }
+
+  .restoration-card-title,
+  .restoration-card-desc,
+  .restoration-specs-strip,
+  .restoration-species-row {
+    min-height: auto !important;
+  }
+
+  .category-card {
+    height: 280px;
+  }
+
+  .service-media {
+    height: 200px;
+  }
+
+  .editorial-media {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-split-fullscreen {
+    min-height: auto !important;
+    padding: 2.25rem 0 2rem 0 !important;
+  }
+
+  .hero-split-fullscreen .row {
+    flex-direction: column !important;
+  }
+
+  .hero-split-image-wrap {
+    min-height: 250px !important;
+    max-height: 360px !important;
+    aspect-ratio: 16 / 10 !important;
+    margin-top: 1.25rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  .hero-floating-stat {
+    bottom: 12px !important;
+    left: 12px !important;
+    padding: 0.6rem 0.9rem !important;
+  }
+
+  .hero-floating-stat .brand-mark {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 0.95rem !important;
+  }
+
+  .hero-floating-stat strong {
+    font-size: 0.88rem !important;
+  }
+
+  .hero-floating-stat span {
+    font-size: 0.7rem !important;
+  }
+
+  .hero-split-stats {
+    gap: 0.75rem !important;
+    padding-top: 1.25rem !important;
+    margin-top: 1.25rem !important;
+  }
+
+  .hero-stat-item:not(:first-child) {
+    padding-left: 0.75rem !important;
+  }
+
+  .cta-banner {
+    padding: 2.25rem 1.5rem;
+  }
+
+  .cta-banner-btns {
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 1.25rem !important;
+  }
+
+  .cta-banner-btns .btn {
+    width: 100% !important;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+}
+
+/* ================= 6. MOBILE PORTRAIT (360px to 575.98px) ================= */
+@media (max-width: 575.98px) {
+  .hero-fullscreen {
+    min-height: calc(100svh - var(--navbar-height));
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero-fullscreen-content h1 {
+    font-size: 2.1rem;
+    line-height: 1.2;
+  }
+
+  .hero-btns,
+  .cta-banner-btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .btn-botanical,
+  .btn-sage,
+  .btn-earth,
+  .btn-outline-botanical,
+  .btn-hero-light {
+    width: 100%;
+  }
+
+  .product-specs {
+    gap: 0.35rem;
+  }
+
+  .gallery-thumbs {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+  }
+
+  .filter-tabs {
+    gap: 0.35rem;
+  }
+
+  .filter-tab-btn {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.82rem;
+  }
+}
+
+/* ================= 7. ULTRA-NARROW SCREENS (200px to 359px) =================
+   Ensuring ZERO horizontal overflow, legible wrap, and touch accessibility
+   at 200px, 240px, 280px, 320px!
+   ============================================================================= */
+@media (max-width: 359.98px) {
+  :root {
+    --navbar-height: 64px;
+    --shared-page-hero-height: clamp(300px, 42vh, 380px);
+  }
+
+  body {
+    font-size: 0.92rem;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .site-container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .brand-logo {
+    gap: 0.35rem !important;
+  }
+
+  .brand-emblem-art {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .brand-heading {
+    font-size: 0.98rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .brand-caption {
+    display: block !important;
+    font-size: 7.2px !important;
+    letter-spacing: 0.015em !important;
+    line-height: 1.1 !important;
+    margin-top: 1px !important;
+    white-space: nowrap !important;
+  }
+
+  .header-actions {
+    gap: 0.35rem;
+  }
+
+  .nav-icon-btn,
+  .nav-dir-btn,
+  .header-actions .btn-botanical,
+  .header-actions a.btn-botanical {
+    height: 36px !important;
+    min-height: 36px !important;
+    max-height: 36px !important;
+  }
+
+  .nav-icon-btn {
+    width: 36px !important;
+    min-width: 36px !important;
+    font-size: 1rem;
+  }
+
+  .dir-toggle-opt {
+    height: 30px;
+    padding: 0 6px;
+    font-size: 0.65rem;
+  }
+
+  .hero-fullscreen-content h1,
+  .page-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .site-eyebrow {
+    font-size: 0.72rem;
+    padding: 0.25rem 0.65rem;
+  }
+
+  .product-body,
+  .service-body,
+  .project-body,
+  .step-card,
+  .testimonial-card,
+  .form-card {
+    padding: 1.15rem 0.85rem;
+  }
+
+  .category-card {
+    height: 240px;
+  }
+
+  .category-overlay {
+    padding: 1.1rem;
+  }
+
+  .category-title {
+    font-size: 1.15rem;
+  }
+
+  .spec-pill {
+    font-size: 0.72rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .btn-botanical,
+  .btn-sage,
+  .btn-earth,
+  .btn-outline-botanical,
+  .btn-hero-light {
+    padding: 0.65rem 1rem;
+    font-size: 0.88rem;
+  }
+
+  .details-spec-table th,
+  .details-spec-table td {
+    display: block;
+    width: 100%;
+    padding: 0.35rem 0;
+  }
+
+  .details-spec-table tr {
+    padding-bottom: 0.5rem;
+    display: block;
+  }
+
+  .gallery-thumbs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .back-to-top-btn {
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Defensive rules against horizontal overflow across all sizes — PRESERVES STICKY NAVBAR */
+html, body {
+  overflow-x: clip !important;
+  max-width: 100%;
+  width: 100%;
+}
+
+.site-header {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1050 !important;
+}
+
+main, section, footer {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.site-container, .container {
+  max-width: 1200px !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-inline: auto !important;
+  padding-left: clamp(1rem, 2.5vw, 1.75rem) !important;
+  padding-right: clamp(1rem, 2.5vw, 1.75rem) !important;
+  padding-inline: clamp(1rem, 2.5vw, 1.75rem) !important;
+  box-sizing: border-box !important;
+}
+
+img, video, iframe, table {
+  max-width: 100%;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ==========================================================================
+   RESPONSIVE: CAPABILITY HUB & RESTORATION TIMELINE
+   ========================================================================== */
+
+@media (max-width: 991px) {
+  .journey-stem-guide {
+    left: 24px !important;
+    transform: none !important;
+  }
+
+  .journey-node-marker {
+    left: 24px !important;
+    transform: translateX(-50%) !important;
+    width: 42px !important;
+    height: 42px !important;
+    font-size: 0.88rem !important;
+    top: 24px !important;
+  }
+
+  .journey-milestone-node {
+    justify-content: flex-start !important;
+    padding-left: 60px !important;
+    margin-bottom: 2.25rem !important;
+  }
+
+  .node-left .journey-card,
+  .node-right .journey-card,
+  .node-left .clean-timeline-card,
+  .node-right .clean-timeline-card {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .capability-specs-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .capability-quick-deck {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .capability-media-card {
+    min-height: 320px !important;
+  }
+
+  .capability-body-card {
+    padding: 24px 24px !important;
+  }
+
+  .capability-title {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .journey-stem-guide {
+    left: 18px !important;
+  }
+
+  .journey-node-marker {
+    left: 18px !important;
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 0.82rem !important;
+    top: 20px !important;
+  }
+
+  .journey-milestone-node {
+    padding-left: 48px !important;
+    margin-bottom: 1.75rem !important;
+  }
+
+  .journey-card,
+  .clean-timeline-card {
+    padding: 18px !important;
+    border-radius: 16px !important;
+  }
+
+  .journey-title {
+    font-size: 1.15rem !important;
+  }
+
+  .journey-desc {
+    font-size: 0.88rem !important;
+  }
+
+  .journey-card-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+  }
+
+  .capability-specs-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .capability-quick-deck {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .capability-media-card {
+    min-height: 250px !important;
+  }
+
+  .capability-media-meta {
+    flex-direction: column !important;
+    gap: 8px !important;
+    padding: 20px 16px 14px !important;
+  }
+
+  .capability-action-bar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .capability-action-bar .btn-botanical,
+  .capability-action-bar .btn {
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE: DIAGNOSTIC GRID & PROJECT TELEMETRY DASHBOARD
+   ========================================================================== */
+
+@media (max-width: 991px) {
+  .diagnostic-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .telemetry-site-nav {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .telemetry-media-terminal {
+    min-height: 300px !important;
+    margin: 12px !important;
+  }
+
+  .telemetry-data-terminal {
+    padding: 16px 20px !important;
+  }
+
+  .telemetry-title {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .diagnostic-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .telemetry-site-nav {
+    grid-template-columns: 1fr !important;
+  }
+
+  .telemetry-gauges-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .telemetry-media-terminal {
+    min-height: 240px !important;
+    margin: 10px !important;
+  }
+
+  .hud-bottom-specs {
+    grid-template-columns: 1fr !important;
+    gap: 4px !important;
+  }
+
+  .telemetry-terminal-footer {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    text-align: center !important;
+  }
+
+  .telemetry-terminal-footer a {
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE: FACILITIES BENTO MATRIX & BRAND LOGO
+   ========================================================================== */
+@media (max-width: 991px) {
+  .facilities-bento-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.25rem !important;
+  }
+
+  .bento-card-span-2,
+  .bento-card-span-3 {
+    grid-column: span 2 !important;
+  }
+
+  .bento-media-split {
+    grid-template-columns: 1fr !important;
+  }
+
+  .bento-metrics-strip {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .facilities-bento-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .bento-card {
+    padding: 1.5rem !important;
+  }
+
+  .bento-card-span-2,
+  .bento-card-span-3 {
+    grid-column: span 1 !important;
+  }
+
+  .bento-metrics-strip {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .bento-title {
+    font-size: 1.25rem !important;
+  }
+
+  /* Compact Brand Logo on Mobile */
+  .brand-logo {
+    gap: 0.45rem !important;
+  }
+
+  .brand-emblem-art {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .brand-heading {
+    font-size: 1.12rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .brand-caption {
+    display: block !important;
+    font-size: 8px !important;
+    letter-spacing: 0.02em !important;
+    line-height: 1.1 !important;
+    margin-top: 1px !important;
+    white-space: nowrap !important;
+  }
+}
+

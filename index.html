@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sylvan & Soil — Native Plant Nursery & Habitat Restoration Service</title>
+  <meta name="description" content="Specialist native plant nursery cultivating regionally adapted wildflowers, grasses, shrubs, and trees, alongside comprehensive ecological habitat restoration services.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" id="mainBootstrapCss">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- Custom Core & Responsive Styles -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ================= ATTRACTIVE BOTANICAL PAGE LOADER ================= -->
+  <div id="pageLoader" class="page-loader" aria-hidden="true">
+    <div class="loader-container">
+      <div class="loader-emblem-halo">
+        <div class="loader-orbit-ring"></div>
+        <div class="loader-pulse-glow"></div>
+        <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Logo Emblem" class="loader-emblem-art">
+      </div>
+      <div class="loader-brand-title">
+        <span class="brand-sylvan">Sylvan</span><span class="brand-amp">&amp;</span><span class="brand-soil">Soil</span>
+      </div>
+      <div class="loader-tagline">Native Plant Nursery &amp; Habitat Restoration</div>
+      <div class="loader-progress-track">
+        <div class="loader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-xl">
+      <div class="site-container">
+        
+        <!-- Brand Logo -->
+        <a class="brand-logo" href="index.html">
+          <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Botanical Emblem" class="brand-emblem-art">
+          <span class="brand-text-col">
+            <span class="brand-heading"><span class="brand-sylvan">Sylvan</span> <span class="brand-amp">&amp;</span> <span class="brand-soil">Soil</span></span>
+            <span class="brand-caption">Native Plant Nursery &amp; Restoration</span>
+          </span>
+        </a>
+
+        <!-- Desktop Navigation Links (>= 1200px) -->
+        <div class="collapse navbar-collapse justify-content-center d-none d-xl-flex" id="desktopNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="index.html">Home 1 — Classic Nursery</a></li>
+                <li><a class="dropdown-item " href="home-2.html">Home 2 — Ecological Restoration</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="products.html">Native Plants</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="habitat-restoration.html">Habitat Restoration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="planting-guide.html">Planting Guide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Header Actions: Theme, LTR/RTL, CTA, Mobile Trigger -->
+        <div class="header-actions">
+          <!-- LTR/RTL Toggle (Desktop Only) -->
+          <button type="button" class="nav-dir-btn d-none d-xl-inline-flex" data-dir-switch aria-label="Toggle text direction (LTR / RTL)" title="Switch Layout Direction">
+            <span class="dir-toggle-track">
+              <span class="dir-toggle-opt dir-opt-ltr active">LTR</span>
+              <span class="dir-toggle-opt dir-opt-rtl">RTL</span>
+            </span>
+          </button>
+
+          <!-- Dark Mode Toggle (Desktop Only) -->
+          <button type="button" class="nav-icon-btn d-none d-xl-inline-flex" data-theme-switch aria-label="Toggle light and dark mode" title="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+
+          <!-- Desktop Consultation CTA (Desktop Only) -->
+          <a class="btn-botanical btn-sm-botanical d-none d-xl-inline-flex" href="contact.html"><i class="bi bi-compass"></i> Consult</a>
+
+          <!-- Mobile Menu Hamburger Trigger (Mobile & Tablet < 1200px Only) -->
+          <button type="button" class="nav-icon-btn mobile-nav-trigger d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Open navigation menu">
+            <i class="bi bi-list fs-4"></i>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+      <!-- ================= MOBILE MENU OFFCANVAS ================= -->
+  <div class="offcanvas offcanvas-end mobile-menu-offcanvas" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header border-bottom">
+      <a class="brand-logo" href="index.html">
+        <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Botanical Emblem" class="brand-emblem-art">
+        <span class="brand-text-col">
+          <span class="brand-heading"><span class="brand-sylvan">Sylvan</span> <span class="brand-amp">&amp;</span> <span class="brand-soil">Soil</span></span>
+          <span class="brand-caption">Native Plant Nursery &amp; Restoration</span>
+        </span>
+      </a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <div class="mobile-nav-wrapper">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item">
+            <a class="mobile-nav-link d-flex align-items-center justify-content-between collapsed active" data-bs-toggle="collapse" href="#mobileHomeSub" role="button" aria-expanded="false">
+              <span><i class="bi bi-house-door me-2 text-forest"></i> Home</span>
+              <i class="bi bi-chevron-down small"></i>
+            </a>
+            <div class="collapse" id="mobileHomeSub">
+              <div class="ps-3 pt-2 pb-1 d-flex flex-column gap-1 border-start ms-3 my-1">
+                <a class="mobile-sublink active" href="index.html"><i class="bi bi-flower2 me-2"></i> Home 1 — Classic Nursery</a>
+                <a class="mobile-sublink " href="home-2.html"><i class="bi bi-tree me-2"></i> Home 2 — Ecological Restoration</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="products.html"><i class="bi bi-grid me-2 text-forest"></i> Native Plants</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="habitat-restoration.html"><i class="bi bi-shield-check me-2 text-forest"></i> Habitat Restoration</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="projects.html"><i class="bi bi-images me-2 text-forest"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="planting-guide.html"><i class="bi bi-journal-bookmark me-2 text-forest"></i> Planting Guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="about.html"><i class="bi bi-info-circle me-2 text-forest"></i> About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="contact.html"><i class="bi bi-envelope me-2 text-forest"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile Actions Panel (Buttons Only, Perfectly Centered) -->
+      <div class="mobile-menu-footer pt-3 border-top mt-4">
+        <div class="mobile-controls-panel mb-3 d-flex align-items-center justify-content-center gap-3 py-2">
+          <!-- Theme Toggle Button -->
+          <button type="button" class="nav-icon-btn" data-theme-switch aria-label="Toggle light and dark mode" title="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+
+          <!-- LTR / RTL Direction Toggle Button -->
+          <button type="button" class="nav-dir-btn" data-dir-switch aria-label="Toggle text direction (LTR / RTL)" title="Switch Layout Direction">
+            <span class="dir-toggle-track">
+              <span class="dir-toggle-opt dir-opt-ltr active">LTR</span>
+              <span class="dir-toggle-opt dir-opt-rtl">RTL</span>
+            </span>
+          </button>
+        </div>
+
+        <a class="btn-botanical w-100 justify-content-center py-2" href="contact.html">
+          <i class="bi bi-compass"></i> Schedule Consultation
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ================= SECTION 1: FULL-SCREEN HERO ================= -->
+    <section class="hero-fullscreen" id="heroHome1">
+      <div class="hero-bg-layer" style="background-image: url('assets/images/hero/hero-home1.jpg');"></div>
+      <div class="hero-overlay"></div>
+      
+      <div class="site-container hero-fullscreen-content">
+        <div class="row align-items-center">
+          <div class="col-lg-9 col-xl-8">
+            <span class="site-eyebrow text-white mb-3" style="background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.25);">
+              <i class="bi bi-flower2"></i> Regionally Sourced Native Ecotypes
+            </span>
+            <h1>Restoring Living Landscapes With Proven Native Plants</h1>
+            <p class="lead">
+              We cultivate genetically diverse, climate-resilient native flora and provide science-led ecological restoration services for meadows, woodlands, wetlands, and resilient urban spaces.
+            </p>
+            <div class="d-flex flex-wrap gap-3 hero-btns">
+              <a href="products.html" class="btn-botanical">
+                <i class="bi bi-flower1"></i> Explore Native Plants
+              </a>
+              <a href="contact.html" class="btn-hero-light">
+                <i class="bi bi-compass"></i> Plan a Restoration Project
+              </a>
+            </div>
+
+            <!-- Eco Impact Highlights -->
+            <div class="row g-3 mt-4 pt-3 border-top border-white border-opacity-25">
+              <div class="col-auto">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-patch-check-fill text-warning fs-5"></i>
+                  <div>
+                    <strong class="d-block text-white font-display">100% Native Ecotypes</strong>
+                    <small class="text-white text-opacity-75">No invasive cultivars</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-bug-fill text-warning fs-5"></i>
+                  <div>
+                    <strong class="d-block text-white font-display">Pollinator Certified</strong>
+                    <small class="text-white text-opacity-75">Chemical-free propagation</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-droplet-half text-warning fs-5"></i>
+                  <div>
+                    <strong class="d-block text-white font-display">Drought Resilient</strong>
+                    <small class="text-white text-opacity-75">Deep-rooted ecosystem value</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 2: SHOP NATIVE PLANT COLLECTIONS ================= -->
+    <section class="site-section bg-surface" id="collections">
+      <div class="site-container">
+        
+        <div class="site-section-head text-center">
+          <span class="site-eyebrow"><i class="bi bi-grid-fill"></i> Plant Categories</span>
+          <h2 class="display-5">Shop Native Plant Collections</h2>
+          <p class="text-muted">Explore hand-selected regional plants organized by ecological role and habitat suitability.</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <div class="category-pill-grid">
+          
+          <!-- Card 1: Wildflowers -->
+          <a href="products.html?type=wildflower" class="cat-pill-card">
+            <div class="cat-pill-media">
+              <img src="assets/images/categories/cat-wildflowers.jpg" alt="Native Wildflowers" loading="lazy">
+            </div>
+            <div class="cat-pill-label">
+              <span>Native Wildflowers</span>
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </a>
+
+          <!-- Card 2: Grasses & Sedges -->
+          <a href="products.html?type=grass" class="cat-pill-card">
+            <div class="cat-pill-media">
+              <img src="assets/images/categories/cat-grasses.jpg" alt="Native Grasses and Sedges" loading="lazy">
+            </div>
+            <div class="cat-pill-label">
+              <span>Grasses &amp; Sedges</span>
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </a>
+
+          <!-- Card 3: Native Shrubs -->
+          <a href="products.html?type=shrub" class="cat-pill-card">
+            <div class="cat-pill-media">
+              <img src="assets/images/categories/cat-shrubs.jpg" alt="Native Shrubs" loading="lazy">
+            </div>
+            <div class="cat-pill-label">
+              <span>Native Shrubs</span>
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </a>
+
+          <!-- Card 4: Canopy Trees -->
+          <a href="products.html?type=tree" class="cat-pill-card">
+            <div class="cat-pill-media">
+              <img src="assets/images/categories/cat-trees.jpg" alt="Canopy Trees" loading="lazy">
+            </div>
+            <div class="cat-pill-label">
+              <span>Canopy Trees</span>
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </a>
+
+          <!-- Card 5: Pollinator Plants -->
+          <a href="products.html?type=pollinator" class="cat-pill-card">
+            <div class="cat-pill-media">
+              <img src="assets/images/categories/cat-pollinators.jpg" alt="Pollinator Host Plants" loading="lazy">
+            </div>
+            <div class="cat-pill-label">
+              <span>Pollinator Plants</span>
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </a>
+
+          <!-- Card 6: Wetland Flora -->
+          <a href="products.html?type=wetland" class="cat-pill-card">
+            <div class="cat-pill-media">
+              <img src="assets/images/categories/cat-wetland.jpg" alt="Wetland and Rain Garden Flora" loading="lazy">
+            </div>
+            <div class="cat-pill-label">
+              <span>Wetland Flora</span>
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="products.html" class="btn-outline-botanical">
+            <i class="bi bi-collection"></i> Explore Full Nursery Inventory
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3: FEATURED NATIVE PLANTS ================= -->
+    <section class="site-section bg-muted-soft" id="featuredPlants">
+      <div class="site-container">
+        
+        <div class="site-section-head text-center">
+          <span class="site-eyebrow"><i class="bi bi-stars"></i> Proven Performers</span>
+          <h2 class="display-5">Featured Native Species</h2>
+          <p class="text-muted">Rigorous nursery-grown stock with verified regional provenance and high ecological function.</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <div class="product-grid">
+
+          <!-- Product Card 1: Purple Coneflower -->
+          <div class="product-card">
+            <div class="product-media">
+              <img src="assets/images/products/echinacea-purpurea.jpg" alt="Purple Coneflower Echinacea purpurea in bloom" loading="eager">
+              <span class="product-badge badge-pollinator">Keystone Species</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Wildflower · Perennial</span>
+              <h3 class="product-title">Purple Coneflower</h3>
+              <div class="product-botanical-name">Echinacea purpurea</div>
+              <p class="product-desc">Celebrated nectar hub for butterflies and goldfinches with drought tolerance and striking purple petals.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Full Sun</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Dry / Medium</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Midwest &amp; East</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$8.50 <small class="text-muted fs-6 fw-normal">/ pot</small></span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 2: Butterfly Weed -->
+          <div class="product-card">
+            <div class="product-media">
+              <img src="assets/images/products/asclepias-tuberosa.jpg" alt="Butterfly Weed Asclepias tuberosa vibrant orange blooms" loading="eager">
+              <span class="product-badge badge-pollinator">Host Plant</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Wildflower · Milkweed</span>
+              <h3 class="product-title">Butterfly Weed</h3>
+              <div class="product-botanical-name">Asclepias tuberosa</div>
+              <p class="product-desc">Essential host plant for Monarch caterpillars featuring vivid orange umbels and extreme drought resistance.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Full Sun</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Well-Drained</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Broad Native</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$9.00 <small class="text-muted fs-6 fw-normal">/ pot</small></span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 3: Wild Bergamot -->
+          <div class="product-card">
+            <div class="product-media">
+              <img src="assets/images/products/monarda-fistulosa.jpg" alt="Wild Bergamot Monarda fistulosa lavender blossoms" loading="eager">
+              <span class="product-badge">High Nectar</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Mint Family · Perennial</span>
+              <h3 class="product-title">Wild Bergamot (Bee Balm)</h3>
+              <div class="product-botanical-name">Monarda fistulosa</div>
+              <p class="product-desc">Fragrant lavender flowers beloved by bumblebees, hummingbirds, and clearwing hummingbird moths.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Sun / Part Sun</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Medium</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Eastern Prairies</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$8.00 <small class="text-muted fs-6 fw-normal">/ pot</small></span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 4: Little Bluestem -->
+          <div class="product-card">
+            <div class="product-media">
+              <img src="assets/images/products/schizachyrium-scoparium.jpg" alt="Little Bluestem native grass in autumn color" loading="eager">
+              <span class="product-badge">Erosion Control</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Native Grass · Bunchgrass</span>
+              <h3 class="product-title">Little Bluestem</h3>
+              <div class="product-botanical-name">Schizachyrium scoparium</div>
+              <p class="product-desc">Pinnacle prairie bunchgrass offering blue-green summer foliage, brilliant copper fall tint, and nesting cover.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Full Sun</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Dry / Poor Soils</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Native Range</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$7.50 <small class="text-muted fs-6 fw-normal">/ plug</small></span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 5: Black-Eyed Susan -->
+          <div class="product-card">
+            <div class="product-media">
+              <img src="assets/images/products/rudbeckia-hirta.jpg" alt="Black-Eyed Susan golden yellow flowers" loading="eager">
+              <span class="product-badge">Pioneer Plant</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Wildflower · Biennial</span>
+              <h3 class="product-title">Black-Eyed Susan</h3>
+              <div class="product-botanical-name">Rudbeckia hirta</div>
+              <p class="product-desc">Prolific self-seeding meadow pioneer establishing instant color and erosion stabilization for open soils.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Full Sun</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Adaptable</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Widespread</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$7.00 <small class="text-muted fs-6 fw-normal">/ pot</small></span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 6: Cardinal Flower -->
+          <div class="product-card">
+            <div class="product-media">
+              <img src="assets/images/products/lobelia-cardinalis.jpg" alt="Cardinal Flower Lobelia cardinalis intense scarlet spike" loading="eager">
+              <span class="product-badge badge-wetland">Riparian Star</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Wildflower · Wetland</span>
+              <h3 class="product-title">Cardinal Flower</h3>
+              <div class="product-botanical-name">Lobelia cardinalis</div>
+              <p class="product-desc">Electric crimson bloom spikes that are the premier nectar source for ruby-throated hummingbirds.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Part Shade / Sun</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Wet / Moist</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Stream Corridors</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$9.50 <small class="text-muted fs-6 fw-normal">/ pot</small></span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">View Details</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="products.html" class="btn-botanical">
+            <i class="bi bi-grid-3x3-gap"></i> Browse All 15+ Native Species in Catalog
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4: HABITAT RESTORATION SERVICES ================= -->
+    <section class="site-section bg-surface" id="services">
+      <div class="site-container">
+
+        <div class="site-section-head text-center">
+          <span class="site-eyebrow"><i class="bi bi-shield-shaded"></i> Professional Ecological Services</span>
+          <h2 class="display-5">Habitat Restoration Services</h2>
+          <p class="text-muted">Science-based restoration planning, invasive management, and establishment services for private, municipal, and commercial lands.</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <div class="service-grid">
+
+          <!-- Service 1: Meadow Establishment -->
+          <div class="service-card">
+            <div class="service-media">
+              <img src="assets/images/services/meadow-restoration.jpg" alt="Native meadow restoration field" loading="eager">
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Native Meadow Establishment</h3>
+              <p class="service-desc">Transforming high-maintenance turf grass and depleted agricultural acreage into biodiverse, perennial native meadows with multi-season pollinator support.</p>
+              <a href="habitat-restoration.html" class="service-link">
+                Learn More About Meadows <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 2: Pollinator Habitat Creation -->
+          <div class="service-card">
+            <div class="service-media">
+              <img src="assets/images/services/pollinator-habitat.jpg" alt="Pollinator garden landscape design" loading="eager">
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Pollinator Habitat Creation</h3>
+              <p class="service-desc">Targeted planting plans supporting declining wild bees, native butterflies, and beneficial insects with specific larval host plants and unbroken nectar corridors.</p>
+              <a href="habitat-restoration.html" class="service-link">
+                Learn More About Pollinators <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 3: Ecological Landscaping -->
+          <div class="service-card">
+            <div class="service-media">
+              <img src="assets/images/services/ecological-landscaping.jpg" alt="Naturalistic residential landscape with native plants" loading="eager">
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Ecological Landscaping</h3>
+              <p class="service-desc">Blending architectural aesthetics with regional conservation principles to replace conventional resource-intensive turf with living, self-sustaining plant communities.</p>
+              <a href="habitat-restoration.html" class="service-link">
+                Learn More About Design <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 4: Woodland Restoration -->
+          <div class="service-card">
+            <div class="service-media">
+              <img src="assets/images/services/woodland-planting.jpg" alt="Native woodland restoration understory" loading="eager">
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Native Woodland Restoration</h3>
+              <p class="service-desc">Rebuilding multilayered forest canopies and native understories, protecting ancient soil mycorrhizae, and planting woodland shade ephemerals.</p>
+              <a href="habitat-restoration.html" class="service-link">
+                Learn More About Woodlands <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 5: Wetland & Riparian -->
+          <div class="service-card">
+            <div class="service-media">
+              <img src="assets/images/services/wetland-riparian.jpg" alt="Riparian shoreline restoration project" loading="eager">
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Wetland &amp; Riparian Restoration</h3>
+              <p class="service-desc">Stabilizing stream banks, establishing bioswales and retention marshes to filter stormwater runoff, prevent erosion, and safeguard regional watersheds.</p>
+              <a href="habitat-restoration.html" class="service-link">
+                Learn More About Wetlands <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 6: Invasive Replacement -->
+          <div class="service-card">
+            <div class="service-media">
+              <img src="assets/images/services/invasive-replacement.jpg" alt="Invasive removal and replanting native species" loading="eager">
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Invasive Species Replacement</h3>
+              <p class="service-desc">Systematic eradication of aggressive exotic species followed immediately by cover cropping and dense installation of aggressive native competitor ecotypes.</p>
+              <a href="habitat-restoration.html" class="service-link">
+                Learn More About Invasive Control <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 5: OUR CONSERVATION APPROACH ================= -->
+    <section class="site-section bg-muted-soft" id="conservationApproach">
+      <div class="site-container">
+        
+        <div class="editorial-wrap row align-items-center g-5">
+          
+          <div class="col-lg-6">
+            <div class="editorial-media">
+              <img src="assets/images/about/team-fieldwork.jpg" alt="Restoration ecologist surveying native plant community in field" loading="eager">
+              <div class="editorial-badge">
+                <i class="bi bi-award-fill text-warning"></i> Genetic Provenance Integrity
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <span class="site-eyebrow"><i class="bi bi-heart-pulse-fill"></i> Ecological Stewardship</span>
+            <h2 class="display-6 mt-2 mb-3">Why Native Plant Ecosystems Matter</h2>
+            <p class="editorial-lead mb-4">
+              Native plants have co-evolved alongside our regional birds, insects, and soil microbes for millennia. When we plant natives, we rebuild the foundational food web upon which all wildlife depends.
+            </p>
+
+            <div class="d-flex flex-column gap-3 mb-4">
+              <div class="d-flex align-items-start gap-3">
+                <div class="brand-mark mt-1" style="width:36px;height:36px;min-width:36px;font-size:1.05rem;background:var(--color-forest);border-radius:10px;">
+                  <i class="bi bi-check-lg"></i>
+                </div>
+                <div>
+                  <strong class="font-display d-block text-main mb-1">Local Eco-type Adaptation</strong>
+                  <span class="text-muted small lh-base d-block">We source seeds strictly within verified regional eco-regions to preserve natural genetic fitness and phenology.</span>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <div class="brand-mark mt-1" style="width:36px;height:36px;min-width:36px;font-size:1.05rem;background:var(--color-forest);border-radius:10px;">
+                  <i class="bi bi-check-lg"></i>
+                </div>
+                <div>
+                  <strong class="font-display d-block text-main mb-1">Deep Root Hydrology &amp; Soil Building</strong>
+                  <span class="text-muted small lh-base d-block">Native roots penetrate up to 15 feet into subsoil, sequestering carbon and opening channels that absorb heavy rainfall.</span>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <div class="brand-mark mt-1" style="width:36px;height:36px;min-width:36px;font-size:1.05rem;background:var(--color-forest);border-radius:10px;">
+                  <i class="bi bi-check-lg"></i>
+                </div>
+                <div>
+                  <strong class="font-display d-block text-main mb-1">Zero Pesticide Propagation</strong>
+                  <span class="text-muted small lh-base d-block">Our entire nursery operation is strictly free from synthetic neonicotinoids, guaranteeing safe forage for delicate pollinator species.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap align-items-center gap-3 pt-2">
+              <a href="about.html" class="btn-botanical">
+                <i class="bi bi-book"></i> Read Our Mission &amp; Methods
+              </a>
+              <a href="habitat-restoration.html" class="btn-outline-botanical">
+                <i class="bi bi-shield-check"></i> Ecological Standards
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 6: FINAL CTA & COMPREHENSIVE FOOTER ================= -->
+    <section class="site-section section-cta bg-surface" id="finalCtaFooter">
+      <div class="site-container">
+        
+        <!-- CTA Banner -->
+        <div class="cta-banner">
+          <div class="row align-items-center justify-content-between g-4 position-relative" style="z-index: 2;">
+            <div class="col-lg-7">
+              <span class="badge bg-white text-dark font-display px-3 py-2 rounded-pill mb-2">
+                <i class="bi bi-sun-fill text-warning"></i> Start Your Restoration Journey
+              </span>
+              <h2>Ready to Bring Your Landscape Back to Life?</h2>
+              <p>
+                Whether you need nursery-grown native plant plugs for your garden or full-scale habitat restoration for 50 acres, our team of botanists is ready to assist.
+              </p>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+              <div class="cta-banner-btns">
+                <a href="products.html" class="btn btn-light text-dark fw-bold rounded-pill">
+                  <i class="bi bi-bag-check me-1"></i> Explore Native Plants
+                </a>
+                <a href="contact.html" class="btn btn-outline-light fw-bold rounded-pill">
+                  <i class="bi bi-calendar-check me-1"></i> Request Site Assessment
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= COMPREHENSIVE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="row g-4 g-lg-5">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="col-lg-4">
+          <a class="brand-logo text-white mb-3 d-inline-flex" href="index.html">
+            <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Botanical Emblem" class="brand-emblem-art">
+            <span class="brand-text-col">
+              <span class="brand-heading"><span class="brand-sylvan">Sylvan</span> <span class="brand-amp">&amp;</span> <span class="brand-soil">Soil</span></span>
+              <span class="brand-caption">Native Plant Nursery &amp; Restoration</span>
+            </span>
+          </a>
+          <p class="footer-brand-desc">
+            Specialist native plant nursery &amp; ecological restoration consultancy dedicated to fostering biodiverse regional habitats, living soils, and sustainable landscapes.
+          </p>
+          <div class="footer-social-wrap" aria-label="Social connections">
+            <a href="https://facebook.com" class="social-circle" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" class="social-circle" aria-label="Instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" class="social-circle" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" class="social-circle" aria-label="YouTube" target="_blank" rel="noopener"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-sm-6 col-lg-2">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Home 1</a></li>
+            <li><a href="home-2.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Home 2</a></li>
+            <li><a href="products.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Plants</a></li>
+            <li><a href="habitat-restoration.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Restoration</a></li>
+            <li><a href="projects.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Projects Gallery</a></li>
+            <li><a href="planting-guide.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Planting Guide</a></li>
+            <li><a href="about.html" class="footer-link"><i class="bi bi-chevron-right small"></i> About Us</a></li>
+            <li><a href="contact.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Categories & Services -->
+        <div class="col-sm-6 col-lg-3">
+          <h5>Native Plants</h5>
+          <ul class="footer-links">
+            <li><a href="products.html?type=wildflower" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Wildflowers</a></li>
+            <li><a href="products.html?type=grass" class="footer-link"><i class="bi bi-chevron-right small"></i> Grasses &amp; Sedges</a></li>
+            <li><a href="products.html?type=shrub" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Understory Shrubs</a></li>
+            <li><a href="products.html?type=tree" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Keystone Trees</a></li>
+            <li><a href="products.html?type=pollinator" class="footer-link"><i class="bi bi-chevron-right small"></i> Pollinator Host Plants</a></li>
+            <li><a href="products.html?type=wetland" class="footer-link"><i class="bi bi-chevron-right small"></i> Rain Garden &amp; Wetland</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Newsletter -->
+        <div class="col-lg-3">
+          <h5>Get In Touch</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <strong>Nursery &amp; Growing Grounds</strong><br>
+              482 Sylvan Way, Ecological Valley, NY 12508
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <div>+1 (555) 789-3210</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <div>hello@sylvanandsoilnursery.com</div>
+          </div>
+
+          <h6 class="text-white mt-4 mb-2 font-display">Botanical Newsletter</h6>
+          <form class="footer-newsletter-wrap" data-validate>
+            <input type="email" class="footer-newsletter-input" placeholder="Enter your email" required aria-label="Email for botanical newsletter">
+            <button type="submit" class="footer-newsletter-btn" aria-label="Subscribe to newsletter">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </form>
+          <div class="form-feedback-alert d-none mt-2 small"></div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Sylvan &amp; Soil Native Plant Nursery &amp; Habitat Restoration Services. All rights reserved.
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal" class="text-white text-opacity-75">Privacy Policy</a>
+          <span>·</span>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal" class="text-white text-opacity-75">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= BACK TO TOP BUTTON ================= -->
+  <button type="button" class="back-to-top-btn" id="backToTop" aria-label="Back to top of page" title="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- ================= PRIVACY POLICY MODAL ================= -->
+  <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-display" id="privacyModalLabel">Privacy Policy</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small text-muted">Effective Date: January 1, 2026</p>
+          <p>At Sylvan &amp; Soil Native Plant Nursery, we respect your privacy and are committed to protecting any personal information you provide when requesting consultations, plant availability lists, or newsletter subscriptions.</p>
+          <h6 class="font-display mt-3">Information We Collect</h6>
+          <p class="small text-muted">We collect your contact details (name, email, phone) and project site specifications solely to deliver plant selections and restoration proposals. We never sell or distribute your data to third parties.</p>
+          <h6 class="font-display mt-3">Data Security</h6>
+          <p class="small text-muted">All submissions through our digital consultation forms are processed using modern encryption protocols to prevent unauthorized access.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-botanical btn-sm-botanical" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TERMS MODAL ================= -->
+  <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-display" id="termsModalLabel">Terms &amp; Conditions</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small text-muted">Effective Date: January 1, 2026</p>
+          <h6 class="font-display mt-3">Plant Stock &amp; Regional Provenance</h6>
+          <p class="small text-muted">All nursery stock is propagated from verified non-invasive regional ecotypes. Plant availability is subject to seasonal dormancy cycles and seasonal weather conditions.</p>
+          <h6 class="font-display mt-3">Restoration Contracting</h6>
+          <p class="small text-muted">Restoration project timelines, seed mixes, and establishment warranties are defined individually in formal site agreements following preliminary soil and hydrological assessment.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-botanical btn-sm-botanical" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Application JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

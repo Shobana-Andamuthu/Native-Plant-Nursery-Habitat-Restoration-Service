@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restoration Project Gallery &amp; Case Studies — Sylvan &amp; Soil</title>
+  <meta name="description" content="Explore completed ecological habitat restoration projects: tallgrass prairies, riparian wetlands, pollinator corridors, and residential conservation landscapes.">
+  
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" id="mainBootstrapCss">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- Custom Core & Responsive Styles -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ================= ATTRACTIVE BOTANICAL PAGE LOADER ================= -->
+  <div id="pageLoader" class="page-loader" aria-hidden="true">
+    <div class="loader-container">
+      <div class="loader-emblem-halo">
+        <div class="loader-orbit-ring"></div>
+        <div class="loader-pulse-glow"></div>
+        <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Logo Emblem" class="loader-emblem-art">
+      </div>
+      <div class="loader-brand-title">
+        <span class="brand-sylvan">Sylvan</span><span class="brand-amp">&amp;</span><span class="brand-soil">Soil</span>
+      </div>
+      <div class="loader-tagline">Native Plant Nursery &amp; Habitat Restoration</div>
+      <div class="loader-progress-track">
+        <div class="loader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-xl">
+      <div class="site-container">
+        
+        <!-- Brand Logo -->
+        <a class="brand-logo" href="index.html">
+          <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Botanical Emblem" class="brand-emblem-art">
+          <span class="brand-text-col">
+            <span class="brand-heading"><span class="brand-sylvan">Sylvan</span> <span class="brand-amp">&amp;</span> <span class="brand-soil">Soil</span></span>
+            <span class="brand-caption">Native Plant Nursery &amp; Restoration</span>
+          </span>
+        </a>
+
+        <!-- Desktop Navigation Links (>= 1200px) -->
+        <div class="collapse navbar-collapse justify-content-center d-none d-xl-flex" id="desktopNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item " href="index.html">Home 1 — Classic Nursery</a></li>
+                <li><a class="dropdown-item " href="home-2.html">Home 2 — Ecological Restoration</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="products.html">Native Plants</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="habitat-restoration.html">Habitat Restoration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="planting-guide.html">Planting Guide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Header Actions: Theme, LTR/RTL, CTA, Mobile Trigger -->
+        <div class="header-actions">
+          <!-- LTR/RTL Toggle (Desktop Only) -->
+          <button type="button" class="nav-dir-btn d-none d-xl-inline-flex" data-dir-switch aria-label="Toggle text direction (LTR / RTL)" title="Switch Layout Direction">
+            <span class="dir-toggle-track">
+              <span class="dir-toggle-opt dir-opt-ltr active">LTR</span>
+              <span class="dir-toggle-opt dir-opt-rtl">RTL</span>
+            </span>
+          </button>
+
+          <!-- Dark Mode Toggle (Desktop Only) -->
+          <button type="button" class="nav-icon-btn d-none d-xl-inline-flex" data-theme-switch aria-label="Toggle light and dark mode" title="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+
+          <!-- Desktop Consultation CTA (Desktop Only) -->
+          <a class="btn-botanical btn-sm-botanical d-none d-xl-inline-flex" href="contact.html"><i class="bi bi-compass"></i> Consult</a>
+
+          <!-- Mobile Menu Hamburger Trigger (Mobile & Tablet < 1200px Only) -->
+          <button type="button" class="nav-icon-btn mobile-nav-trigger d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Open navigation menu">
+            <i class="bi bi-list fs-4"></i>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+      <!-- ================= MOBILE MENU OFFCANVAS ================= -->
+  <div class="offcanvas offcanvas-end mobile-menu-offcanvas" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header border-bottom">
+      <a class="brand-logo" href="index.html">
+        <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Botanical Emblem" class="brand-emblem-art">
+        <span class="brand-text-col">
+          <span class="brand-heading"><span class="brand-sylvan">Sylvan</span> <span class="brand-amp">&amp;</span> <span class="brand-soil">Soil</span></span>
+          <span class="brand-caption">Native Plant Nursery &amp; Restoration</span>
+        </span>
+      </a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <div class="mobile-nav-wrapper">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item">
+            <a class="mobile-nav-link d-flex align-items-center justify-content-between collapsed " data-bs-toggle="collapse" href="#mobileHomeSub" role="button" aria-expanded="false">
+              <span><i class="bi bi-house-door me-2 text-forest"></i> Home</span>
+              <i class="bi bi-chevron-down small"></i>
+            </a>
+            <div class="collapse" id="mobileHomeSub">
+              <div class="ps-3 pt-2 pb-1 d-flex flex-column gap-1 border-start ms-3 my-1">
+                <a class="mobile-sublink " href="index.html"><i class="bi bi-flower2 me-2"></i> Home 1 — Classic Nursery</a>
+                <a class="mobile-sublink " href="home-2.html"><i class="bi bi-tree me-2"></i> Home 2 — Ecological Restoration</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="products.html"><i class="bi bi-grid me-2 text-forest"></i> Native Plants</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="habitat-restoration.html"><i class="bi bi-shield-check me-2 text-forest"></i> Habitat Restoration</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link active" href="projects.html"><i class="bi bi-images me-2 text-forest"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="planting-guide.html"><i class="bi bi-journal-bookmark me-2 text-forest"></i> Planting Guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="about.html"><i class="bi bi-info-circle me-2 text-forest"></i> About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="contact.html"><i class="bi bi-envelope me-2 text-forest"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile Actions Panel (Buttons Only, Perfectly Centered) -->
+      <div class="mobile-menu-footer pt-3 border-top mt-4">
+        <div class="mobile-controls-panel mb-3 d-flex align-items-center justify-content-center gap-3 py-2">
+          <!-- Theme Toggle Button -->
+          <button type="button" class="nav-icon-btn" data-theme-switch aria-label="Toggle light and dark mode" title="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+
+          <!-- LTR / RTL Direction Toggle Button -->
+          <button type="button" class="nav-dir-btn" data-dir-switch aria-label="Toggle text direction (LTR / RTL)" title="Switch Layout Direction">
+            <span class="dir-toggle-track">
+              <span class="dir-toggle-opt dir-opt-ltr active">LTR</span>
+              <span class="dir-toggle-opt dir-opt-rtl">RTL</span>
+            </span>
+          </button>
+        </div>
+
+        <a class="btn-botanical w-100 justify-content-center py-2" href="contact.html">
+          <i class="bi bi-compass"></i> Schedule Consultation
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ================= SECTION 1: GALLERY HERO (SHARED .page-hero HEIGHT) ================= -->
+    <section class="page-hero" style="background-image: url('assets/images/hero/hero-projects.jpg');" id="projectsHero">
+      <div class="page-hero-overlay"></div>
+      <div class="site-container page-hero-content">
+        <nav class="page-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="bi bi-chevron-right small"></i>
+          <span>Restoration Projects</span>
+        </nav>
+        <h1>Restoration Project Gallery</h1>
+        <p class="lead">
+          Field-proven ecological transformations across private landholdings, riparian corridors, public nature preserves, and conservation estates.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 2: FEATURED PROJECTS ================= -->
+    <section class="site-section bg-surface" id="featuredProjects">
+      <div class="site-container">
+        
+        <div class="site-section-head text-center">
+          <span class="site-eyebrow"><i class="bi bi-award-fill"></i> Field Benchmarks</span>
+          <h2 class="display-5">Featured Habitat Projects</h2>
+          <p class="text-muted">High-impact restorations illustrating native biodiversity recovery, erosion mitigation, and living soil revival.</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <div class="project-grid">
+
+          <!-- Project 1: Cedar Creek -->
+          <div class="project-card">
+            <div class="project-media">
+              <img src="assets/images/projects/featured-cedar-creek.jpg" alt="Cedar Creek Riparian Corridor restoration" loading="eager">
+            </div>
+            <div class="project-body">
+              <span class="project-habitat-tag">Riparian Wetland &middot; 14 Acres</span>
+              <h3 class="project-title">Cedar Creek Stream Bank Corridor</h3>
+              <p class="project-desc">Stabilized 2,400 linear feet of agricultural drainage with deep-root native dogwoods, sedges, and emergent rushes.</p>
+              <div class="project-metrics">
+                <div class="project-metric-item">
+                  <strong>85%</strong>
+                  <span>Sediment Reduction</span>
+                </div>
+                <div class="project-metric-item">
+                  <strong>34</strong>
+                  <span>Bird Species Documented</span>
+                </div>
+              </div>
+              <a href="#projectSpotlights" class="btn-botanical btn-sm-botanical">View Spotlight</a>
+            </div>
+          </div>
+
+          <!-- Project 2: Pine Ridge Prairie -->
+          <div class="project-card">
+            <div class="project-media">
+              <img src="assets/images/projects/featured-pine-ridge.jpg" alt="Pine Ridge Tallgrass Prairie" loading="eager">
+            </div>
+            <div class="project-body">
+              <span class="project-habitat-tag">Tallgrass Prairie &middot; 28 Acres</span>
+              <h3 class="project-title">Pine Ridge Meadow Conversion</h3>
+              <p class="project-desc">Converted a continuous-mow commercial turf parcel into a 42-species native meadow with zero supplemental watering.</p>
+              <div class="project-metrics">
+                <div class="project-metric-item">
+                  <strong>4.2x</strong>
+                  <span>Pollinator Count Gain</span>
+                </div>
+                <div class="project-metric-item">
+                  <strong>100%</strong>
+                  <span>Mowing Fuel Eliminated</span>
+                </div>
+              </div>
+              <a href="#projectSpotlights" class="btn-botanical btn-sm-botanical">View Spotlight</a>
+            </div>
+          </div>
+
+          <!-- Project 3: Blue Heron Wetland -->
+          <div class="project-card">
+            <div class="project-media">
+              <img src="assets/images/projects/featured-blue-heron.jpg" alt="Blue Heron Wetland Basin" loading="eager">
+            </div>
+            <div class="project-body">
+              <span class="project-habitat-tag">Retention Marsh &middot; 8 Acres</span>
+              <h3 class="project-title">Blue Heron Stormwater Basin</h3>
+              <p class="project-desc">Engineered functional freshwater marsh wetland absorbing peak 100-year storm pulses while hosting amphibious fauna.</p>
+              <div class="project-metrics">
+                <div class="project-metric-item">
+                  <strong>92%</strong>
+                  <span>Nitrogen Filtering</span>
+                </div>
+                <div class="project-metric-item">
+                  <strong>6</strong>
+                  <span>Amphibian Taxa Present</span>
+                </div>
+              </div>
+              <a href="#projectSpotlights" class="btn-botanical btn-sm-botanical">View Spotlight</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3: EMPIRICAL HABITAT RECOVERY & GIS TELEMETRY (NEW UNIQUE LAYOUT) ================= -->
+    <section class="site-section bg-surface border-top border-bottom" id="fieldImpactDashboard">
+      <div class="site-container">
+
+        <div class="site-section-head text-center">
+          <span class="site-eyebrow"><i class="bi bi-broadcast-pin"></i> Field Telemetry &amp; Bio-Metrics</span>
+          <h2 class="display-5">Empirical Habitat Recovery Benchmarks</h2>
+          <p class="text-muted">Quantitative biological data captured across 500+ restored acres over 5-year post-establishment monitoring cycles.</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <div class="telemetry-dashboard-wrap">
+
+          <!-- Main Telemetry Console: Streamlined Full Dashboard Grid -->
+          <div class="telemetry-console-card">
+            <div class="row g-4 align-items-stretch">
+              
+              <!-- Left Column: Visual Media & GIS Sensor HUD -->
+              <div class="col-lg-5">
+                <div class="telemetry-media-terminal">
+                  <img id="telemetryImage" src="assets/images/projects/empirical-benchmarks.jpg" alt="Empirical restoration benchmarks" class="telemetry-hud-img">
+                  
+                  <div class="telemetry-hud-overlay">
+                    <div class="hud-top-bar">
+                      <span class="hud-live-pill"><span class="hud-dot"></span> LIVE SENSOR MONITOR</span>
+                      <span id="telemetryCoords" class="hud-coords">42°15'33"N &middot; 73°22'10"W</span>
+                    </div>
+
+                    <div class="hud-bottom-specs">
+                      <div class="hud-stat-chip">
+                        <small>Acreage</small>
+                        <strong id="telemetryAcreage">500+ Acres</strong>
+                      </div>
+                      <div class="hud-stat-chip">
+                        <small>Matrix</small>
+                        <strong id="telemetryWatershed">Multi-Tiered</strong>
+                      </div>
+                      <div class="hud-stat-chip">
+                        <small>Survival</small>
+                        <strong id="telemetrySoil">98.4% Rate</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Comparative Before/After Gauges & Empirical Yields -->
+              <div class="col-lg-7">
+                <div class="telemetry-data-terminal">
+                  
+                  <div class="data-terminal-header">
+                    <div>
+                      <span id="telemetryBadge" class="badge bg-success-subtle text-success font-display px-3 py-1 rounded-pill mb-2">Empirical Ecosystem Recovery</span>
+                      <h3 id="telemetryTitle" class="telemetry-title">5-Year Ecological Recovery &amp; Biological Yields</h3>
+                    </div>
+                    <span class="telemetry-certified-badge"><i class="bi bi-shield-check me-1"></i> EPA Monitored</span>
+                  </div>
+
+                  <p id="telemetryDesc" class="telemetry-desc">
+                    Quantitative multi-year telemetry captured across restored regional matrices, verifying rapid stormwater infiltration gains, elimination of agricultural runoff, and dramatic recolonization by native pollinators.
+                  </p>
+
+                  <!-- 4 Comparative Progress Gauges (Before vs After) -->
+                  <div class="telemetry-gauges-grid">
+                    
+                    <!-- Gauge 1: Infiltration -->
+                    <div class="telemetry-gauge-card">
+                      <div class="gauge-meta">
+                        <span class="gauge-title"><i class="bi bi-water text-primary me-1"></i> Water Infiltration</span>
+                        <span id="gaugeVal1" class="gauge-after-val text-success">3.8 in/hr (+1160%)</span>
+                      </div>
+                      <div class="gauge-track">
+                        <div id="gaugeBar1" class="gauge-fill bg-success" style="width: 88%;"></div>
+                      </div>
+                      <div class="gauge-baseline">
+                        <span>Baseline: <strong id="gaugeBase1">0.3 in/hr (Compacted)</strong></span>
+                        <span class="text-success fw-bold">Active Sponge</span>
+                      </div>
+                    </div>
+
+                    <!-- Gauge 2: Biodiversity -->
+                    <div class="telemetry-gauge-card">
+                      <div class="gauge-meta">
+                        <span class="gauge-title"><i class="bi bi-flower1 text-warning me-1"></i> Native Plant Taxa</span>
+                        <span id="gaugeVal2" class="gauge-after-val text-success">48 Species</span>
+                      </div>
+                      <div class="gauge-track">
+                        <div id="gaugeBar2" class="gauge-fill bg-success" style="width: 92%;"></div>
+                      </div>
+                      <div class="gauge-baseline">
+                        <span>Baseline: <strong id="gaugeBase2">3 Invasive Grasses</strong></span>
+                        <span class="text-success fw-bold">Co-Evolved Flora</span>
+                      </div>
+                    </div>
+
+                    <!-- Gauge 3: Pollinator Frequency -->
+                    <div class="telemetry-gauge-card">
+                      <div class="gauge-meta">
+                        <span class="gauge-title"><i class="bi bi-bug text-info me-1"></i> Pollinator Activity</span>
+                        <span id="gaugeVal3" class="gauge-after-val text-success">52 Visits / hr</span>
+                      </div>
+                      <div class="gauge-track">
+                        <div id="gaugeBar3" class="gauge-fill bg-success" style="width: 85%;"></div>
+                      </div>
+                      <div class="gauge-baseline">
+                        <span>Baseline: <strong id="gaugeBase3">2 Visits / hr</strong></span>
+                        <span class="text-success fw-bold">Active Sanctuary</span>
+                      </div>
+                    </div>
+
+                    <!-- Gauge 4: Turbidity Reduction -->
+                    <div class="telemetry-gauge-card">
+                      <div class="gauge-meta">
+                        <span class="gauge-title"><i class="bi bi-shield-shaded text-danger me-1"></i> Water Turbidity (NTU)</span>
+                        <span id="gaugeVal4" class="gauge-after-val text-success">6.2 NTU (-94%)</span>
+                      </div>
+                      <div class="gauge-track">
+                        <div id="gaugeBar4" class="gauge-fill bg-success" style="width: 94%;"></div>
+                      </div>
+                      <div class="gauge-baseline">
+                        <span>Baseline: <strong id="gaugeBase4">145 NTU (Heavy Silt)</strong></span>
+                        <span class="text-success fw-bold">Clear Flow</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- Terminal Footer -->
+                  <div class="telemetry-terminal-footer">
+                    <div class="telemetry-notice">
+                      <i class="bi bi-info-circle text-success me-1"></i> Data validated via quarterly botanical line-intercept transects.
+                    </div>
+                    <a href="contact.html" class="btn-botanical btn-sm-botanical">Request Project Audit</a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4: ALL REGIONAL CASE STUDIES (FILTER BAR REMOVED) ================= -->
+    <section class="site-section bg-muted-soft" id="projectsByHabitat">
+      <div class="site-container">
+        
+        <div class="site-section-head text-center">
+          <span class="site-eyebrow"><i class="bi bi-images"></i> Field Portfolio</span>
+          <h2 class="display-5">Regional Restoration Case Studies</h2>
+          <p class="text-muted">Documented perennial transformations across stream corridors, native prairies, and urban conservation estates.</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <!-- Project Grid: All 6 Projects Shown Seamlessly -->
+        <div class="project-grid" id="habitatProjectGrid">
+
+          <!-- 1: Cedar Creek (Wetland) -->
+          <div class="project-card" data-project-item data-project-habitat="wetland">
+            <div class="project-media">
+              <img src="assets/images/projects/project-cedar-creek.jpg" alt="Cedar Creek Stream" loading="eager">
+            </div>
+            <div class="project-body">
+              <span class="project-habitat-tag">Wetlands &middot; Stream Corridor</span>
+              <h4 class="project-title">Cedar Creek Stream Bank</h4>
+              <p class="project-desc">Live stake bioengineering with native willow and silky dogwood for active bank stabilization.</p>
+              <div class="small text-muted mb-2"><i class="bi bi-geo-alt me-1"></i> Dutchess County, NY</div>
+            </div>
+          </div>
+
+          <!-- 2: Pine Ridge (Meadow) -->
+          <div class="project-card" data-project-item data-project-habitat="meadow">
+            <div class="project-media">
+              <img src="assets/images/projects/project-pine-ridge.jpg" alt="Pine Ridge Prairie" loading="eager">
+            </div>
+            <div class="project-body">
+              <span class="project-habitat-tag">Meadows &middot; Tallgrass</span>
+              <h4 class="project-title">Pine Ridge Native Meadow</h4>
+              <p class="project-desc">28-acre conservation seed drill with warm-season grasses and continuous summer nectar forbs.</p>
+              <div class="small text-muted mb-2"><i class="bi bi-geo-alt me-1"></i> Berkshire Foothills, MA</div>
+            </div>
+          </div>
+
+          <!-- 3: Monarch Waystation (Pollinator) -->
+          <div class="project-card" data-project-item data-project-habitat="pollinator">
+            <div class="project-media">
+              <img src="assets/images/projects/project-monarch-way.png" alt="Monarch Waystation Corridor" loading="eager">
+            </div>
+            <div class="project-body">
+              <span class="project-habitat-tag">Pollinator &middot; Milkweed Sanctuary</span>
+              <h4 class="project-title">Highland Monarch Waystation</h4>
+              <p class="project-desc">High-density installation of 4 milkweed species and late autumn goldenrods along migratory ridge lines.</p>
+              <div class="small text-muted mb-2"><i class="bi bi-geo-alt me-1"></i> Hudson Valley, NY</div>
+            </div>
+          </div>
+
+          <!-- 4: Oak Savanna (Woodland) -->
+          <div class="project-card" data-project-item data-project-habitat="woodland">
+            <div class="project-media">
+              <img src="assets/images/projects/project-oak-savanna.jpg" alt="Oak Savanna Restoration" loading="eager">
+            </div>
+            <div class="project-body">
+              <span class="project-habitat-tag">Woodlands &middot; Understory</span>
+              <h4 class="project-title">Heritage Oak Savanna</h4>
+              <p class="project-desc">Eradication of invasive buckthorn under mature 150-year-old bur oaks, replanted with shade sedges.</p>
+              <div class="small text-muted mb-2"><i class="bi bi-geo-alt me-1"></i> Litchfield Hills, CT</div>
+            </div>
+          </div>
+
+          <!-- 5: Stormwater Bioswale (Landscape) -->
+          <div class="project-card" data-project-item data-project-habitat="landscape">
+            <div class="project-media">
+              <img src="assets/images/projects/project-stormwater-bioswale.jpg" alt="Stormwater bioswale landscape" loading="eager">
+            </div>
+            <div class="project-body">
+              <span class="project-habitat-tag">Ecological Landscape &middot; Civic</span>
+              <h4 class="project-title">Municipal Center Bioswale</h4>
+              <p class="project-desc">Urban infiltration bioswale handling 100% of parking lot stormwater runoff through bioretention soils.</p>
+              <div class="small text-muted mb-2"><i class="bi bi-geo-alt me-1"></i> Kingston, NY</div>
+            </div>
+          </div>
+
+          <!-- 6: Blue Heron (Wetland) -->
+          <div class="project-card" data-project-item data-project-habitat="wetland">
+            <div class="project-media">
+              <img src="assets/images/projects/project-blue-heron.png" alt="Blue Heron Retention Basin" loading="eager">
+            </div>
+            <div class="project-body">
+              <span class="project-habitat-tag">Wetlands &middot; Retention Pond</span>
+              <h4 class="project-title">Blue Heron Marsh Basin</h4>
+              <p class="project-desc">Sediment filtering wetland ringed with buttonbush and blue flag iris providing bird sanctuary.</p>
+              <div class="small text-muted mb-2"><i class="bi bi-geo-alt me-1"></i> Ulster County, NY</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4: PROJECT DETAILS & CASE DEEP-DIVES ================= -->
+    <section class="site-section bg-surface" id="projectSpotlights">
+      <div class="site-container">
+        
+        <div class="site-section-head text-center">
+          <span class="site-eyebrow"><i class="bi bi-journal-richtext"></i> In-Depth Analysis</span>
+          <h2 class="display-5">Featured Project Spotlight</h2>
+          <p class="text-muted">A closer look at the botanical strategies and measured results of the Cedar Creek Restoration.</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <div class="editorial-media">
+              <img src="assets/images/projects/case-study-cedar-creek.jpg" alt="Cedar Creek restoration detailed view" loading="eager">
+              <div class="editorial-badge">
+                <i class="bi bi-clock-history text-warning"></i> 3-Year Post-Establishment Audit
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <span class="badge bg-success-subtle text-success font-display px-3 py-1 rounded-pill mb-2">Case Study Deep Dive</span>
+            <h3 class="display-6 mb-3">Cedar Creek Riparian Transformation</h3>
+            <p class="text-muted leading-relaxed">
+              <strong>The Challenge:</strong> Intensive agricultural row-cropping adjacent to the stream bank had triggered severe shear erosion, shedding tons of topsoil into the trout watershed annually and collapsing downstream aquatic insect populations.
+            </p>
+            <p class="text-muted leading-relaxed">
+              <strong>Our Approach:</strong> We graded severe embankments to a stable 3:1 slope, stabilized soils with biodegradable coir fiber logs, and installed 4,500 bare-root live stakes of Red Osier Dogwood (<em>Cornus sericea</em>) and Pussy Willow (<em>Salix discolor</em>), backed by deep-rooting tussock sedge plugs.
+            </p>
+            
+            <div class="p-3 rounded-3 bg-muted-soft border border-subtle mb-4">
+              <div class="row text-center g-2">
+                <div class="col-4">
+                  <div class="fw-bold text-success fs-4 font-display">2,400 ft</div>
+                  <div class="text-muted small">Stream Protected</div>
+                </div>
+                <div class="col-4 border-start">
+                  <div class="fw-bold text-success fs-4 font-display">96%</div>
+                  <div class="text-muted small">Live Stake Rooting</div>
+                </div>
+                <div class="col-4 border-start">
+                  <div class="fw-bold text-success fs-4 font-display">Zero</div>
+                  <div class="text-muted small">Bank Failures Recorded</div>
+                </div>
+              </div>
+            </div>
+
+            <a href="contact.html?project=cedar-creek" class="btn-botanical">
+              <i class="bi bi-chat-left-dots"></i> Discuss a Similar Project
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 5: CONTACT CTA & COMPREHENSIVE FOOTER ================= -->
+    <section class="site-section section-cta bg-muted-soft" id="projectsCtaFooter">
+      <div class="site-container">
+        
+        <div class="cta-banner">
+          <div class="row align-items-center justify-content-between g-4 position-relative" style="z-index: 2;">
+            <div class="col-lg-7">
+              <span class="badge bg-white text-dark font-display px-3 py-2 rounded-pill mb-2">
+                <i class="bi bi-envelope-paper-fill text-success"></i> Start Planning
+              </span>
+              <h2>Have Land That Needs Ecological Care?</h2>
+              <p>
+                Whether you oversee 1 acre or 100 acres, our team provides site diagnostics, permit filings, seed mix formulating, and turnkey installation.
+              </p>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+              <div class="cta-banner-btns">
+                <a href="contact.html" class="btn btn-light text-dark fw-bold rounded-pill">
+                  <i class="bi bi-compass me-1"></i> Request Consultation
+                </a>
+                <a href="products.html" class="btn btn-outline-light fw-bold rounded-pill">
+                  <i class="bi bi-flower1 me-1"></i> Order Native Seed &amp; Plugs
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= COMPREHENSIVE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="row g-4 g-lg-5">
+        
+        <div class="col-lg-4">
+          <a class="brand-logo text-white mb-3 d-inline-flex" href="index.html">
+            <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Botanical Emblem" class="brand-emblem-art">
+            <span class="brand-text-col">
+              <span class="brand-heading"><span class="brand-sylvan">Sylvan</span> <span class="brand-amp">&amp;</span> <span class="brand-soil">Soil</span></span>
+              <span class="brand-caption">Native Plant Nursery &amp; Restoration</span>
+            </span>
+          </a>
+          <p class="footer-brand-desc">
+            Specialist native plant nursery &amp; ecological restoration consultancy dedicated to fostering biodiverse regional habitats, living soils, and sustainable landscapes.
+          </p>
+          <div class="footer-social-wrap" aria-label="Social connections">
+            <a href="https://facebook.com" class="social-circle" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" class="social-circle" aria-label="Instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" class="social-circle" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" class="social-circle" aria-label="YouTube" target="_blank" rel="noopener"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-2">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Home 1</a></li>
+            <li><a href="home-2.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Home 2</a></li>
+            <li><a href="products.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Plants</a></li>
+            <li><a href="habitat-restoration.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Restoration</a></li>
+            <li><a href="projects.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Projects Gallery</a></li>
+            <li><a href="planting-guide.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Planting Guide</a></li>
+            <li><a href="about.html" class="footer-link"><i class="bi bi-chevron-right small"></i> About Us</a></li>
+            <li><a href="contact.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <h5>Native Plants</h5>
+          <ul class="footer-links">
+            <li><a href="products.html?type=wildflower" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Wildflowers</a></li>
+            <li><a href="products.html?type=grass" class="footer-link"><i class="bi bi-chevron-right small"></i> Grasses &amp; Sedges</a></li>
+            <li><a href="products.html?type=shrub" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Understory Shrubs</a></li>
+            <li><a href="products.html?type=tree" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Keystone Trees</a></li>
+            <li><a href="products.html?type=pollinator" class="footer-link"><i class="bi bi-chevron-right small"></i> Pollinator Host Plants</a></li>
+            <li><a href="products.html?type=wetland" class="footer-link"><i class="bi bi-chevron-right small"></i> Rain Garden &amp; Wetland</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Get In Touch</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <strong>Nursery &amp; Growing Grounds</strong><br>
+              482 Sylvan Way, Ecological Valley, NY 12508
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <div>+1 (555) 789-3210</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <div>hello@sylvanandsoilnursery.com</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Sylvan &amp; Soil Native Plant Nursery &amp; Habitat Restoration Services. All rights reserved.
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal" class="text-white text-opacity-75">Privacy Policy</a>
+          <span>·</span>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal" class="text-white text-opacity-75">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top-btn" id="backToTop" aria-label="Back to top of page" title="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-display" id="privacyModalLabel">Privacy Policy</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small text-muted">We respect your privacy and protect personal consultation inquiries.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-botanical btn-sm-botanical" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-display" id="termsModalLabel">Terms &amp; Conditions</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small text-muted">All nursery stock is regionally sourced and non-invasive.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-botanical btn-sm-botanical" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Application JS -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/projects.js"></script>
+</body>
+</html>

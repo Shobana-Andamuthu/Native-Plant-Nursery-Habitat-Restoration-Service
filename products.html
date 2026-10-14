@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Native Plants &amp; Nursery Catalog — Sylvan &amp; Soil</title>
+  <meta name="description" content="Shop genetically diverse regional native wildflowers, grasses, sedges, shrubs, and keystone trees. Filter by region, sun, moisture, and habitat.">
+  
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" id="mainBootstrapCss">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- Custom Core & Responsive Styles -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ================= ATTRACTIVE BOTANICAL PAGE LOADER ================= -->
+  <div id="pageLoader" class="page-loader" aria-hidden="true">
+    <div class="loader-container">
+      <div class="loader-emblem-halo">
+        <div class="loader-orbit-ring"></div>
+        <div class="loader-pulse-glow"></div>
+        <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Logo Emblem" class="loader-emblem-art">
+      </div>
+      <div class="loader-brand-title">
+        <span class="brand-sylvan">Sylvan</span><span class="brand-amp">&amp;</span><span class="brand-soil">Soil</span>
+      </div>
+      <div class="loader-tagline">Native Plant Nursery &amp; Habitat Restoration</div>
+      <div class="loader-progress-track">
+        <div class="loader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-xl">
+      <div class="site-container">
+        
+        <!-- Brand Logo -->
+        <a class="brand-logo" href="index.html">
+          <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Botanical Emblem" class="brand-emblem-art">
+          <span class="brand-text-col">
+            <span class="brand-heading"><span class="brand-sylvan">Sylvan</span> <span class="brand-amp">&amp;</span> <span class="brand-soil">Soil</span></span>
+            <span class="brand-caption">Native Plant Nursery &amp; Restoration</span>
+          </span>
+        </a>
+
+        <!-- Desktop Navigation Links (>= 1200px) -->
+        <div class="collapse navbar-collapse justify-content-center d-none d-xl-flex" id="desktopNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item " href="index.html">Home 1 — Classic Nursery</a></li>
+                <li><a class="dropdown-item " href="home-2.html">Home 2 — Ecological Restoration</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="products.html">Native Plants</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="habitat-restoration.html">Habitat Restoration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="planting-guide.html">Planting Guide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Header Actions: Theme, LTR/RTL, CTA, Mobile Trigger -->
+        <div class="header-actions">
+          <!-- LTR/RTL Toggle (Desktop Only) -->
+          <button type="button" class="nav-dir-btn d-none d-xl-inline-flex" data-dir-switch aria-label="Toggle text direction (LTR / RTL)" title="Switch Layout Direction">
+            <span class="dir-toggle-track">
+              <span class="dir-toggle-opt dir-opt-ltr active">LTR</span>
+              <span class="dir-toggle-opt dir-opt-rtl">RTL</span>
+            </span>
+          </button>
+
+          <!-- Dark Mode Toggle (Desktop Only) -->
+          <button type="button" class="nav-icon-btn d-none d-xl-inline-flex" data-theme-switch aria-label="Toggle light and dark mode" title="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+
+          <!-- Desktop Consultation CTA (Desktop Only) -->
+          <a class="btn-botanical btn-sm-botanical d-none d-xl-inline-flex" href="contact.html"><i class="bi bi-compass"></i> Consult</a>
+
+          <!-- Mobile Menu Hamburger Trigger (Mobile & Tablet < 1200px Only) -->
+          <button type="button" class="nav-icon-btn mobile-nav-trigger d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Open navigation menu">
+            <i class="bi bi-list fs-4"></i>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+      <!-- ================= MOBILE MENU OFFCANVAS ================= -->
+  <div class="offcanvas offcanvas-end mobile-menu-offcanvas" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header border-bottom">
+      <a class="brand-logo" href="index.html">
+        <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Botanical Emblem" class="brand-emblem-art">
+        <span class="brand-text-col">
+          <span class="brand-heading"><span class="brand-sylvan">Sylvan</span> <span class="brand-amp">&amp;</span> <span class="brand-soil">Soil</span></span>
+          <span class="brand-caption">Native Plant Nursery &amp; Restoration</span>
+        </span>
+      </a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <div class="mobile-nav-wrapper">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item">
+            <a class="mobile-nav-link d-flex align-items-center justify-content-between collapsed " data-bs-toggle="collapse" href="#mobileHomeSub" role="button" aria-expanded="false">
+              <span><i class="bi bi-house-door me-2 text-forest"></i> Home</span>
+              <i class="bi bi-chevron-down small"></i>
+            </a>
+            <div class="collapse" id="mobileHomeSub">
+              <div class="ps-3 pt-2 pb-1 d-flex flex-column gap-1 border-start ms-3 my-1">
+                <a class="mobile-sublink " href="index.html"><i class="bi bi-flower2 me-2"></i> Home 1 — Classic Nursery</a>
+                <a class="mobile-sublink " href="home-2.html"><i class="bi bi-tree me-2"></i> Home 2 — Ecological Restoration</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link active" href="products.html"><i class="bi bi-grid me-2 text-forest"></i> Native Plants</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="habitat-restoration.html"><i class="bi bi-shield-check me-2 text-forest"></i> Habitat Restoration</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="projects.html"><i class="bi bi-images me-2 text-forest"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="planting-guide.html"><i class="bi bi-journal-bookmark me-2 text-forest"></i> Planting Guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="about.html"><i class="bi bi-info-circle me-2 text-forest"></i> About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="contact.html"><i class="bi bi-envelope me-2 text-forest"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile Actions Panel (Buttons Only, Perfectly Centered) -->
+      <div class="mobile-menu-footer pt-3 border-top mt-4">
+        <div class="mobile-controls-panel mb-3 d-flex align-items-center justify-content-center gap-3 py-2">
+          <!-- Theme Toggle Button -->
+          <button type="button" class="nav-icon-btn" data-theme-switch aria-label="Toggle light and dark mode" title="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+
+          <!-- LTR / RTL Direction Toggle Button -->
+          <button type="button" class="nav-dir-btn" data-dir-switch aria-label="Toggle text direction (LTR / RTL)" title="Switch Layout Direction">
+            <span class="dir-toggle-track">
+              <span class="dir-toggle-opt dir-opt-ltr active">LTR</span>
+              <span class="dir-toggle-opt dir-opt-rtl">RTL</span>
+            </span>
+          </button>
+        </div>
+
+        <a class="btn-botanical w-100 justify-content-center py-2" href="contact.html">
+          <i class="bi bi-compass"></i> Schedule Consultation
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ================= SECTION 1: PRODUCTS HERO (SHARED .page-hero HEIGHT) ================= -->
+    <section class="page-hero" style="background-image: url('assets/images/hero/hero-products.jpg');" id="productsHero">
+      <div class="page-hero-overlay"></div>
+      <div class="site-container page-hero-content">
+        <nav class="page-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="bi bi-chevron-right small"></i>
+          <span>Native Plant Catalog</span>
+        </nav>
+        <h1>Regional Native Plant Inventory</h1>
+        <p class="lead">
+          Genetically diverse wildflowers, bunchgrasses, understory shrubs, and trees cultivated in peat-free, chemical-free soils for immediate ecological success.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 2: PRODUCT CATEGORIES ================= -->
+    <section class="site-section bg-surface" id="productCategories">
+      <div class="site-container">
+        
+        <div class="site-section-head text-center">
+          <span class="site-eyebrow"><i class="bi bi-collection-fill"></i> Plant Families</span>
+          <h2 class="display-5">Explore by Plant Type</h2>
+          <p class="text-muted">Select an ecological category to focus your planting plan or habitat restoration project.</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <div class="product-type-filter-grid">
+
+          <button type="button" class="type-filter-card active" data-quick-type="all">
+            <span class="type-filter-icon"><i class="bi bi-grid-fill"></i></span>
+            <div class="type-filter-info">
+              <strong class="d-block font-display">All Varieties</strong>
+              <small class="text-muted">15+ Native Ecotypes</small>
+            </div>
+            <i class="bi bi-check2 type-filter-check"></i>
+          </button>
+
+          <button type="button" class="type-filter-card" data-quick-type="wildflower">
+            <span class="type-filter-icon"><i class="bi bi-flower2"></i></span>
+            <div class="type-filter-info">
+              <strong class="d-block font-display">Wildflowers</strong>
+              <small class="text-muted">Nectar &amp; Host Forbs</small>
+            </div>
+            <i class="bi bi-arrow-right type-filter-check"></i>
+          </button>
+
+          <button type="button" class="type-filter-card" data-quick-type="grass">
+            <span class="type-filter-icon"><i class="bi bi-bezier2"></i></span>
+            <div class="type-filter-info">
+              <strong class="d-block font-display">Grasses &amp; Sedges</strong>
+              <small class="text-muted">Deep Root Soil Anchors</small>
+            </div>
+            <i class="bi bi-arrow-right type-filter-check"></i>
+          </button>
+
+          <button type="button" class="type-filter-card" data-quick-type="shrub">
+            <span class="type-filter-icon"><i class="bi bi-tree"></i></span>
+            <div class="type-filter-info">
+              <strong class="d-block font-display">Native Shrubs</strong>
+              <small class="text-muted">Fruiting Understory</small>
+            </div>
+            <i class="bi bi-arrow-right type-filter-check"></i>
+          </button>
+
+          <button type="button" class="type-filter-card" data-quick-type="tree">
+            <span class="type-filter-icon"><i class="bi bi-tree-fill"></i></span>
+            <div class="type-filter-info">
+              <strong class="d-block font-display">Native Trees</strong>
+              <small class="text-muted">Keystone Canopy Species</small>
+            </div>
+            <i class="bi bi-arrow-right type-filter-check"></i>
+          </button>
+
+          <button type="button" class="type-filter-card" data-quick-type="pollinator">
+            <span class="type-filter-icon"><i class="bi bi-bug-fill"></i></span>
+            <div class="type-filter-info">
+              <strong class="d-block font-display">Pollinator Hosts</strong>
+              <small class="text-muted">Monarch &amp; Native Bees</small>
+            </div>
+            <i class="bi bi-arrow-right type-filter-check"></i>
+          </button>
+
+          <button type="button" class="type-filter-card" data-quick-type="wetland">
+            <span class="type-filter-icon"><i class="bi bi-droplet-fill"></i></span>
+            <div class="type-filter-info">
+              <strong class="d-block font-display">Wetland &amp; Water</strong>
+              <small class="text-muted">Rain Garden Biofiltration</small>
+            </div>
+            <i class="bi bi-arrow-right type-filter-check"></i>
+          </button>
+
+          <button type="button" class="type-filter-card" data-quick-type="fern">
+            <span class="type-filter-icon"><i class="bi bi-feather"></i></span>
+            <div class="type-filter-info">
+              <strong class="d-block font-display">Ferns &amp; Cover</strong>
+              <small class="text-muted">Living Green Mulch</small>
+            </div>
+            <i class="bi bi-arrow-right type-filter-check"></i>
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ================= SECTION 3: NATIVE PLANT PRODUCT GRID ================= -->
+    <section class="site-section bg-muted-soft" id="plantInventory">
+      <div class="site-container">
+        
+        <div class="site-section-head text-center mb-4">
+          <span class="site-eyebrow"><i class="bi bi-flower1"></i> Nursery Catalog</span>
+          <h2 class="display-5">Individual Native Plant Varieties</h2>
+          <p class="text-muted" id="filterResultCount">Showing all 15 native plant varieties with regional eco-region provenance</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <!-- 12 Unique Plant Cards -->
+        <div class="product-grid" id="mainProductGrid">
+
+          <!-- 1. Purple Coneflower -->
+          <div class="product-card" data-product-card data-name="Purple Coneflower" data-botanical="Echinacea purpurea" data-type="wildflower pollinator" data-region="midwest northeast" data-sun="full-sun" data-moisture="dry medium" data-habitat="meadow garden">
+            <div class="product-media">
+              <img src="assets/images/products/echinacea-purpurea.jpg" alt="Purple Coneflower" loading="eager">
+              <span class="product-badge badge-pollinator">Keystone</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Wildflower &middot; Perennial</span>
+              <h3 class="product-title">Purple Coneflower</h3>
+              <div class="product-botanical-name">Echinacea purpurea</div>
+              <p class="product-desc">Magnet for bumblebees and goldfinches; upright purple petals surrounding an orange spiky cone.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Full Sun</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Dry / Medium</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Midwest / East</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$8.50</span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Butterfly Weed -->
+          <div class="product-card" data-product-card data-name="Butterfly Weed" data-botanical="Asclepias tuberosa" data-type="wildflower pollinator" data-region="midwest northeast southeast" data-sun="full-sun" data-moisture="dry" data-habitat="meadow garden">
+            <div class="product-media">
+              <img src="assets/images/products/asclepias-tuberosa.jpg" alt="Butterfly Weed" loading="eager">
+              <span class="product-badge badge-pollinator">Monarch Host</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Wildflower &middot; Milkweed</span>
+              <h3 class="product-title">Butterfly Weed</h3>
+              <div class="product-botanical-name">Asclepias tuberosa</div>
+              <p class="product-desc">Vivid fiery orange blooms; critical caterpillar host for Monarch butterflies with zero maintenance needs.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Full Sun</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Dry Sandy</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Broad Native</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$9.00</span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Wild Bergamot -->
+          <div class="product-card" data-product-card data-name="Wild Bergamot" data-botanical="Monarda fistulosa" data-type="wildflower pollinator" data-region="midwest northeast southeast" data-sun="full-sun part-sun" data-moisture="medium" data-habitat="meadow woodland">
+            <div class="product-media">
+              <img src="assets/images/products/monarda-fistulosa.jpg" alt="Wild Bergamot" loading="eager">
+              <span class="product-badge">Aromatic Mint</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Wildflower &middot; Mint Family</span>
+              <h3 class="product-title">Wild Bergamot</h3>
+              <div class="product-botanical-name">Monarda fistulosa</div>
+              <p class="product-desc">Lavender pom-pom blooms with citrus mint foliage; major draw for hummingbirds and hawk moths.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Sun / Part Shade</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Medium Moist</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Eastern US</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$8.00</span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Little Bluestem -->
+          <div class="product-card" data-product-card data-name="Little Bluestem" data-botanical="Schizachyrium scoparium" data-type="grass" data-region="midwest northeast southeast pacific-nw" data-sun="full-sun" data-moisture="dry medium" data-habitat="meadow garden">
+            <div class="product-media">
+              <img src="assets/images/products/schizachyrium-scoparium.jpg" alt="Little Bluestem" loading="eager">
+              <span class="product-badge">Bunchgrass</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Native Grass &middot; Perennial</span>
+              <h3 class="product-title">Little Bluestem</h3>
+              <div class="product-botanical-name">Schizachyrium scoparium</div>
+              <p class="product-desc">Blue-green summer stems turning glowing mahogany copper in autumn with fluffy silver seedheads.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Full Sun</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Dry / Poor Soils</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Prairies</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$7.50</span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Black-Eyed Susan -->
+          <div class="product-card" data-product-card data-name="Black-Eyed Susan" data-botanical="Rudbeckia hirta" data-type="wildflower pollinator" data-region="midwest northeast southeast" data-sun="full-sun" data-moisture="dry medium" data-habitat="meadow garden">
+            <div class="product-media">
+              <img src="assets/images/products/rudbeckia-hirta.jpg" alt="Black-Eyed Susan" loading="eager">
+              <span class="product-badge">Rapid Colonizer</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Wildflower &middot; Biennial</span>
+              <h3 class="product-title">Black-Eyed Susan</h3>
+              <div class="product-botanical-name">Rudbeckia hirta</div>
+              <p class="product-desc">Cheerful golden-yellow rays surrounding dark central domes; fast blooming pioneer for new meadows.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Full Sun</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Adaptable</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Widespread</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$7.00</span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Cardinal Flower -->
+          <div class="product-card" data-product-card data-name="Cardinal Flower" data-botanical="Lobelia cardinalis" data-type="wildflower wetland pollinator" data-region="northeast southeast midwest" data-sun="part-sun shade" data-moisture="wet medium" data-habitat="wetland woodland">
+            <div class="product-media">
+              <img src="assets/images/products/lobelia-cardinalis.jpg" alt="Cardinal Flower" loading="eager">
+              <span class="product-badge badge-wetland">Riparian</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Wetland &middot; Wildflower</span>
+              <h3 class="product-title">Cardinal Flower</h3>
+              <div class="product-botanical-name">Lobelia cardinalis</div>
+              <p class="product-desc">Unmatched intense ruby scarlet flower spikes; number-one choice for ruby-throated hummingbirds.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Part Shade / Sun</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Wet / Moist</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Riparian</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$9.50</span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Red Osier Dogwood -->
+          <div class="product-card" data-product-card data-name="Red Osier Dogwood" data-botanical="Cornus sericea" data-type="shrub wetland" data-region="midwest northeast pacific-nw" data-sun="full-sun part-sun" data-moisture="wet medium" data-habitat="wetland woodland">
+            <div class="product-media">
+              <img src="assets/images/products/cornus-sericea.jpg" alt="Red Osier Dogwood" loading="eager">
+              <span class="product-badge">Winter Color</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Native Shrub &middot; Deciduous</span>
+              <h3 class="product-title">Red Osier Dogwood</h3>
+              <div class="product-botanical-name">Cornus sericea</div>
+              <p class="product-desc">Fiery coral-red winter stems, cream summer flowers, and high-fat white berries for over-wintering birds.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Sun to Shade</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Moist to Wet</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Northern Range</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$16.00</span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Pennsylvania Sedge -->
+          <div class="product-card" data-product-card data-name="Pennsylvania Sedge" data-botanical="Carex pensylvanica" data-type="grass" data-region="northeast midwest" data-sun="part-sun shade" data-moisture="dry medium" data-habitat="woodland garden">
+            <div class="product-media">
+              <img src="assets/images/products/carex-pensylvanica.jpg" alt="Pennsylvania Sedge" loading="eager">
+              <span class="product-badge">Living Lawn</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Sedge &middot; Graminoid</span>
+              <h3 class="product-title">Pennsylvania Sedge</h3>
+              <div class="product-botanical-name">Carex pensylvanica</div>
+              <p class="product-desc">Soft weeping grass-like groundcover that creates a low-mow green carpet under deciduous tree shade.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Partial to Full Shade</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Dry to Medium</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Deciduous Woods</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$6.75</span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Eastern Redbud -->
+          <div class="product-card" data-product-card data-name="Eastern Redbud" data-botanical="Cercis canadensis" data-type="tree pollinator" data-region="midwest northeast southeast" data-sun="full-sun part-sun" data-moisture="medium" data-habitat="woodland garden">
+            <div class="product-media">
+              <img src="assets/images/products/cercis-canadensis.jpg" alt="Eastern Redbud" loading="eager">
+              <span class="product-badge">Understory Tree</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Native Tree &middot; Flowering</span>
+              <h3 class="product-title">Eastern Redbud</h3>
+              <div class="product-botanical-name">Cercis canadensis</div>
+              <p class="product-desc">Magenta pea-like flowers blooming directly on bare branches in April; heart-shaped foliage and butterfly forage.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Sun / Part Shade</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Well-Drained</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Eastern US</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$38.00</span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. Buttonbush -->
+          <div class="product-card" data-product-card data-name="Buttonbush" data-botanical="Cephalanthus occidentalis" data-type="shrub wetland pollinator" data-region="midwest northeast southeast" data-sun="full-sun part-sun" data-moisture="wet" data-habitat="wetland">
+            <div class="product-media">
+              <img src="assets/images/products/cephalanthus-occidentalis.jpg" alt="Buttonbush" loading="eager">
+              <span class="product-badge badge-wetland">Water Cleanser</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Wetland Shrub &middot; Deciduous</span>
+              <h3 class="product-title">Buttonbush</h3>
+              <div class="product-botanical-name">Cephalanthus occidentalis</div>
+              <p class="product-desc">Unique spherical pincushion flowers with sweet nectar; stabilizes muddy banks and tolerates standing water.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Full Sun / Part Sun</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Wet / Saturated</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Pond Edges</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$18.50</span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11. New England Aster -->
+          <div class="product-card" data-product-card data-name="New England Aster" data-botanical="Symphyotrichum novae-angliae" data-type="wildflower pollinator" data-region="midwest northeast southeast" data-sun="full-sun" data-moisture="medium wet" data-habitat="meadow garden">
+            <div class="product-media">
+              <img src="assets/images/products/symphyotrichum-novae.jpg" alt="New England Aster" loading="eager">
+              <span class="product-badge badge-pollinator">Late Autumn Fuel</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Wildflower &middot; Perennial</span>
+              <h3 class="product-title">New England Aster</h3>
+              <div class="product-botanical-name">Symphyotrichum novae-angliae</div>
+              <p class="product-desc">Rich violet blooms with golden centers in September and October; critical fuel for southward migrating monarchs.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Full Sun</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Medium to Moist</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Northeast / Midwest</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$8.50</span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12. Joe Pye Weed -->
+          <div class="product-card" data-product-card data-name="Joe Pye Weed" data-botanical="Eutrochium purpureum" data-type="wildflower wetland pollinator" data-region="midwest northeast southeast" data-sun="full-sun part-sun" data-moisture="medium wet" data-habitat="meadow wetland">
+            <div class="product-media">
+              <img src="assets/images/products/eutrochium-purpureum.jpg" alt="Joe Pye Weed" loading="eager">
+              <span class="product-badge">Architectural</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Wildflower &middot; Tall Perennial</span>
+              <h3 class="product-title">Sweet Joe Pye Weed</h3>
+              <div class="product-botanical-name">Eutrochium purpureum</div>
+              <p class="product-desc">Stately 6-foot perennial crowned with vanilla-scented mauve domes; swallowtail butterfly favorite.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Full Sun / Part Sun</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Moist / Wet</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Riparian / Prairie</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$9.50</span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 13. Switchgrass -->
+          <div class="product-card" data-product-card data-name="Switchgrass" data-botanical="Panicum virgatum" data-type="grass pollinator wetland" data-region="midwest northeast southeast" data-sun="full-sun" data-moisture="dry medium wet" data-habitat="meadow garden wetland">
+            <div class="product-media">
+              <img src="assets/images/products/panicum-virgatum.jpg" alt="Switchgrass" loading="eager">
+              <span class="product-badge">Prairie Pillar</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Warm-Season Grass &middot; Perennial</span>
+              <h3 class="product-title">Native Switchgrass</h3>
+              <div class="product-botanical-name">Panicum virgatum</div>
+              <p class="product-desc">Architectural golden cloud panicles providing dense winter shelter and high-energy seeds for songbirds with deep taproots.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Full Sun</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Dry to Wet</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Native Prairie</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$7.95</span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 14. Northern Spicebush -->
+          <div class="product-card" data-product-card data-name="Northern Spicebush" data-botanical="Lindera benzoin" data-type="shrub pollinator wetland" data-region="midwest northeast southeast" data-sun="part-sun shade" data-moisture="medium wet" data-habitat="woodland wetland">
+            <div class="product-media">
+              <img src="assets/images/products/lindera-benzoin.jpg" alt="Northern Spicebush" loading="eager">
+              <span class="product-badge badge-pollinator">Swallowtail Host</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Deciduous Shrub &middot; Native</span>
+              <h3 class="product-title">Northern Spicebush</h3>
+              <div class="product-botanical-name">Lindera benzoin</div>
+              <p class="product-desc">Aromatic foliage, early yellow spring blossoms, and lipid-rich scarlet autumn berries vital for migrating thrushes and catbirds.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Part Sun / Shade</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Moist to Wet</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Forest Understory</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$16.50</span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 15. Christmas Fern -->
+          <div class="product-card" data-product-card data-name="Christmas Fern" data-botanical="Polystichum acrostichoides" data-type="fern" data-region="midwest northeast southeast" data-sun="part-sun shade" data-moisture="medium dry" data-habitat="woodland">
+            <div class="product-media">
+              <img src="assets/images/products/polystichum-acrostichoides.jpg" alt="Christmas Fern" loading="eager">
+              <span class="product-badge">Evergreen Cover</span>
+            </div>
+            <div class="product-body">
+              <span class="product-species-tag">Evergreen Fern &middot; Groundcover</span>
+              <h3 class="product-title">Christmas Fern</h3>
+              <div class="product-botanical-name">Polystichum acrostichoides</div>
+              <p class="product-desc">Glossy deep green leathery fronds that persist under heavy snow; stabilizes shaded slopes and prevents woodland soil erosion.</p>
+              <div class="product-specs">
+                <span class="spec-pill"><i class="bi bi-sun"></i> Part Shade / Shade</span>
+                <span class="spec-pill"><i class="bi bi-droplet"></i> Mesic to Dry</span>
+                <span class="spec-pill"><i class="bi bi-geo-alt"></i> Slope Stabilizer</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$11.00</span>
+                <a href="product-details.html" class="btn-botanical btn-sm-botanical">Details</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Empty State (Shown when no filter matches) -->
+        <div id="filterEmptyState" class="filter-empty-state d-none mt-4">
+          <div class="filter-empty-icon"><i class="bi bi-tree"></i></div>
+          <h3 class="h4">No matching native plants found</h3>
+          <p class="text-muted">Try relaxing your filter parameters or search term to discover other suitable species.</p>
+          <button type="button" id="emptyResetBtn" class="btn-botanical btn-sm-botanical">Reset All Filters</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 5: ECO-REGION SEED PROVENANCE & NURSERY STANDARDS CONSOLE ================= -->
+    <section class="site-section bg-surface" id="provenanceStandards">
+      <div class="site-container">
+        
+        <div class="site-section-head text-center mb-5">
+          <span class="site-eyebrow"><i class="bi bi-compass-fill"></i> Provenance Integrity</span>
+          <h2 class="display-5">Certified Seed Provenance &amp; Nursery Standards</h2>
+          <p class="text-muted">Explore how our strict regional ecotype sourcing and peat-free propagation guarantee landscape survival.</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          
+          <!-- Left: Diagnostic Provenance Terminal -->
+          <div class="col-lg-5 d-flex">
+            <div class="provenance-terminal-card w-100">
+              <span class="site-eyebrow mb-3 d-inline-block"><i class="bi bi-cpu-fill"></i> Eco-Zone Diagnostic Console</span>
+              <h3 class="h4 mb-2 font-display">Select Target Eco-Region</h3>
+              <p class="text-muted small mb-3">Inspect germplasm collection radius and mycorrhizal profile for your local bioregion.</p>
+
+              <!-- Interactive Zone Switcher Buttons -->
+              <div class="provenance-zone-nav">
+                <button type="button" class="provenance-zone-btn active" data-zone-key="glacial">Glacial Till (Midwest)</button>
+                <button type="button" class="provenance-zone-btn" data-zone-key="alluvial">Alluvial Basin (Northeast)</button>
+                <button type="button" class="provenance-zone-btn" data-zone-key="coastal">Coastal Sand (Southeast)</button>
+                <button type="button" class="provenance-zone-btn" data-zone-key="montane">Northern Margin (Boreal)</button>
+              </div>
+
+              <!-- Live Metrics Panel -->
+              <div class="provenance-metrics-panel">
+                <h4 class="h6 font-display text-success mb-3" id="zoneDisplayTitle">Zone 5a-6b: Glacial Drift &amp; Till (Midwest)</h4>
+                
+                <div class="provenance-metric-row">
+                  <span class="text-muted">Collection Radius:</span>
+                  <strong id="zoneDisplayRadius">&lt; 45 Miles from Parent Colony</strong>
+                </div>
+                <div class="provenance-metric-row">
+                  <span class="text-muted">Germplasm Purity:</span>
+                  <strong id="zoneDisplayPurity">100% Open-Pollinated Wild Ecotype</strong>
+                </div>
+                <div class="provenance-metric-row">
+                  <span class="text-muted">Resilience Rating:</span>
+                  <strong id="zoneDisplayResilience">99.4% Genetic Diversity Score</strong>
+                </div>
+                <div class="provenance-metric-row">
+                  <span class="text-muted">Mycorrhizal Fungi:</span>
+                  <strong id="zoneDisplayFungi">Glomus intraradices &amp; Funneliformis</strong>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between text-muted small mt-auto pt-2 border-top border-subtle">
+                <span id="zoneDisplayBatch" class="font-monospace fw-semibold text-success">BATCH: ECO-2026-GLACIAL-TILL</span>
+                <span><i class="bi bi-patch-check-fill text-success me-1"></i> Lab Certified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: 4-Pillar Architectural Nursery Standards -->
+          <div class="col-lg-7">
+            <div class="nursery-standards-grid">
+              
+              <!-- Tile 1 -->
+              <div class="nursery-standard-tile">
+                <div class="standard-tile-icon"><i class="bi bi-recycle"></i></div>
+                <span class="standard-tile-badge">100% Peat-Free Substrate</span>
+                <h4 class="standard-tile-title">Zero Bog Harvesting</h4>
+                <p class="standard-tile-desc">Cultivated exclusively in aged regional pine bark, mature leaf compost, and coarse river sand to preserve ancient carbon sinks.</p>
+              </div>
+
+              <!-- Tile 2 -->
+              <div class="nursery-standard-tile">
+                <div class="standard-tile-icon"><i class="bi bi-shield-shaded"></i></div>
+                <span class="standard-tile-badge">Neonicotinoid Zero</span>
+                <h4 class="standard-tile-title">100% Pollinator Safe</h4>
+                <p class="standard-tile-desc">Zero systemic insecticides or synthetic foliar sprays ever used, ensuring immediate safety for feeding monarchs and solitary bees.</p>
+              </div>
+
+              <!-- Tile 3 -->
+              <div class="nursery-standard-tile">
+                <div class="standard-tile-icon"><i class="bi bi-bezier"></i></div>
+                <span class="standard-tile-badge">Deep-Cell Architecture</span>
+                <h4 class="standard-tile-title">Air-Pruned Taproots</h4>
+                <p class="standard-tile-desc">Propagated in 5-inch conical deep-cell plugs with vertical root-directing ribs that completely prevent root circling and promote deep anchoring.</p>
+              </div>
+
+              <!-- Tile 4 -->
+              <div class="nursery-standard-tile">
+                <div class="standard-tile-icon"><i class="bi bi-tree"></i></div>
+                <span class="standard-tile-badge">Living Biology</span>
+                <h4 class="standard-tile-title">Mycorrhizal Inoculation</h4>
+                <p class="standard-tile-desc">Roots are pre-colonized with native fungal spores to dramatically enhance moisture uptake and mineral extraction during transplanting.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 6: 4-SEASON PHENOLOGY CALENDAR & COMPANION GUILDS ================= -->
+    <section class="site-section bg-muted-soft" id="phenologyGuilds">
+      <div class="site-container">
+        
+        <div class="site-section-head text-center mb-5">
+          <span class="site-eyebrow"><i class="bi bi-calendar3-range-fill"></i> Phenology Matrix</span>
+          <h2 class="display-5">The 4-Season Living Landscape Calendar</h2>
+          <p class="text-muted">Native plants bloom in orchestrated natural sequences, ensuring zero nectar gaps for wildlife throughout the year.</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <!-- 4-Season Connected Timeline Grid -->
+        <div class="phenology-timeline-grid">
+          
+          <!-- Season 1 -->
+          <div class="phenology-season-card">
+            <div class="season-top-bar">
+              <span class="season-badge spring">Phase 01</span>
+              <span class="season-months">April &ndash; May</span>
+            </div>
+            <h3 class="season-title">Spring Awakening</h3>
+            <span class="season-wildlife-target"><i class="bi bi-bug me-1"></i> Queen Bumblebee Emergence</span>
+            <p class="text-muted small mb-3">Critical high-sugar nectar sources during cold spring mornings when few other flowers bloom.</p>
+            <div class="season-bloomers-box">
+              <span class="season-bloomers-label">Key Bloomers</span>
+              <span class="season-plant-tag">Eastern Redbud</span>
+              <span class="season-plant-tag">Carex Sedge</span>
+              <span class="season-plant-tag">Christmas Fern</span>
+            </div>
+          </div>
+
+          <!-- Season 2 -->
+          <div class="phenology-season-card">
+            <div class="season-top-bar">
+              <span class="season-badge early-summer">Phase 02</span>
+              <span class="season-months">June &ndash; July</span>
+            </div>
+            <h3 class="season-title">Early Summer Zenith</h3>
+            <span class="season-wildlife-target"><i class="bi bi-flower2 me-1"></i> Swallowtail &amp; Native Bee Peak</span>
+            <p class="text-muted small mb-3">Abundant floral diversity providing pollen and specialized host foliage for larval butterflies.</p>
+            <div class="season-bloomers-box">
+              <span class="season-bloomers-label">Key Bloomers</span>
+              <span class="season-plant-tag">Purple Coneflower</span>
+              <span class="season-plant-tag">Butterfly Weed</span>
+              <span class="season-plant-tag">Wild Bergamot</span>
+            </div>
+          </div>
+
+          <!-- Season 3 -->
+          <div class="phenology-season-card">
+            <div class="season-top-bar">
+              <span class="season-badge late-summer">Phase 03</span>
+              <span class="season-months">August</span>
+            </div>
+            <h3 class="season-title">Late Summer Heat</h3>
+            <span class="season-wildlife-target"><i class="bi bi-droplet-half me-1"></i> Drought-Resilient Forage</span>
+            <p class="text-muted small mb-3">Deep-rooted prairies and riparian shrubs thriving through scorching summer heat without irrigation.</p>
+            <div class="season-bloomers-box">
+              <span class="season-bloomers-label">Key Bloomers</span>
+              <span class="season-plant-tag">Black-Eyed Susan</span>
+              <span class="season-plant-tag">Buttonbush</span>
+              <span class="season-plant-tag">Cardinal Flower</span>
+            </div>
+          </div>
+
+          <!-- Season 4 -->
+          <div class="phenology-season-card">
+            <div class="season-top-bar">
+              <span class="season-badge autumn-winter">Phase 04</span>
+              <span class="season-months">Sept &ndash; Winter</span>
+            </div>
+            <h3 class="season-title">Autumn Migration</h3>
+            <span class="season-wildlife-target"><i class="bi bi-compass me-1"></i> Monarch Fuel &amp; Bird Seeds</span>
+            <p class="text-muted small mb-3">Crucial pre-migration lipid replenishment and standing winter seedheads feeding goldfinches.</p>
+            <div class="season-bloomers-box">
+              <span class="season-bloomers-label">Key Bloomers</span>
+              <span class="season-plant-tag">New England Aster</span>
+              <span class="season-plant-tag">Sweet Joe Pye</span>
+              <span class="season-plant-tag">Switchgrass</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Curated Companion Guild Kits Header -->
+        <div class="text-center mb-4 pt-3">
+          <span class="site-eyebrow"><i class="bi bi-boxes"></i> Curated Pre-Engineered Kits</span>
+          <h3 class="h3 font-display">Order Ready-to-Plant Companion Guilds</h3>
+          <p class="text-muted small">Scientifically paired plug matrices designed for immediate ecological synergy and zero weeding.</p>
+        </div>
+
+        <!-- Companion Guild Bundles Grid (3-column) -->
+        <div class="guild-bundle-grid">
+          
+          <!-- Guild 1 -->
+          <div class="guild-bundle-card">
+            <div class="guild-bundle-header">
+              <span class="guild-coverage-tag">50 Sq. Ft. Pocket Habitat</span>
+              <h4 class="guild-bundle-title">Monarch Waystation Guild</h4>
+              <p class="guild-bundle-desc">Continuous nectar bridge pairing larval milkweed hosts with late autumn asters.</p>
+            </div>
+            <div class="guild-bundle-body">
+              <ul class="guild-species-list">
+                <li class="guild-species-item"><span>Butterfly Weed (Asclepias)</span> <small>4 Plugs</small></li>
+                <li class="guild-species-item"><span>Purple Coneflower (Echinacea)</span> <small>4 Plugs</small></li>
+                <li class="guild-species-item"><span>New England Aster</span> <small>4 Plugs</small></li>
+                <li class="guild-species-item"><span>Little Bluestem Bunchgrass</span> <small>6 Plugs</small></li>
+              </ul>
+              <div class="guild-bundle-footer">
+                <div>
+                  <small class="text-muted d-block">18 Deep-Cell Plugs</small>
+                  <span class="guild-price">$115.00</span>
+                </div>
+                <a href="contact.html?guild=monarch" class="btn btn-sm btn-botanical rounded-pill px-3">
+                  <i class="bi bi-cart-plus me-1"></i> Order Guild
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guild 2 -->
+          <div class="guild-bundle-card">
+            <div class="guild-bundle-header">
+              <span class="guild-coverage-tag">Stormwater &amp; Ponding Zone</span>
+              <h4 class="guild-bundle-title">Rain Garden Bio-Filter Guild</h4>
+              <p class="guild-bundle-desc">High-water adaptable roots that withstand 48-hr ponding and filter storm runoff.</p>
+            </div>
+            <div class="guild-bundle-body">
+              <ul class="guild-species-list">
+                <li class="guild-species-item"><span>Buttonbush (Cephalanthus)</span> <small>3 Gallons</small></li>
+                <li class="guild-species-item"><span>Cardinal Flower (Lobelia)</span> <small>6 Plugs</small></li>
+                <li class="guild-species-item"><span>Sweet Joe Pye Weed</span> <small>6 Plugs</small></li>
+                <li class="guild-species-item"><span>Red Osier Dogwood</span> <small>2 Shrubs</small></li>
+              </ul>
+              <div class="guild-bundle-footer">
+                <div>
+                  <small class="text-muted d-block">17 Diverse Stock Units</small>
+                  <span class="guild-price">$148.00</span>
+                </div>
+                <a href="contact.html?guild=bioswale" class="btn btn-sm btn-botanical rounded-pill px-3">
+                  <i class="bi bi-cart-plus me-1"></i> Order Guild
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guild 3 -->
+          <div class="guild-bundle-card">
+            <div class="guild-bundle-header">
+              <span class="guild-coverage-tag">Low-Water Meadow Parcel</span>
+              <h4 class="guild-bundle-title">Zero-Mow Prairie Matrix</h4>
+              <p class="guild-bundle-desc">Drought-proof 60/40 wildflower-to-grass matrix that permanently crowds out lawn weeds.</p>
+            </div>
+            <div class="guild-bundle-body">
+              <ul class="guild-species-list">
+                <li class="guild-species-item"><span>Little Bluestem Grass</span> <small>8 Plugs</small></li>
+                <li class="guild-species-item"><span>Native Switchgrass</span> <small>6 Plugs</small></li>
+                <li class="guild-species-item"><span>Black-Eyed Susan</span> <small>5 Plugs</small></li>
+                <li class="guild-species-item"><span>Wild Bergamot (Monarda)</span> <small>5 Plugs</small></li>
+              </ul>
+              <div class="guild-bundle-footer">
+                <div>
+                  <small class="text-muted d-block">24 Deep-Cell Plugs</small>
+                  <span class="guild-price">$139.00</span>
+                </div>
+                <a href="contact.html?guild=prairie" class="btn btn-sm btn-botanical rounded-pill px-3">
+                  <i class="bi bi-cart-plus me-1"></i> Order Guild
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 5: PLANT SELECTION CTA & COMPREHENSIVE FOOTER ================= -->
+    <section class="site-section section-cta bg-muted-soft" id="plantSelectionCta">
+      <div class="site-container">
+        
+        <div class="cta-banner">
+          <div class="row align-items-center justify-content-between g-4 position-relative" style="z-index: 2;">
+            <div class="col-lg-7">
+              <span class="badge bg-white text-dark font-display px-3 py-2 rounded-pill mb-2">
+                <i class="bi bi-patch-question-fill text-success"></i> Unsure What to Plant?
+              </span>
+              <h2>Need a Custom Plant Palette for Your Site?</h2>
+              <p>
+                Send us photos or soil notes from your property. Our nursery team will provide a tailored list of native species suited precisely to your microclimate.
+              </p>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+              <div class="cta-banner-btns">
+                <a href="contact.html" class="btn btn-light text-dark fw-bold rounded-pill">
+                  <i class="bi bi-envelope-paper me-1"></i> Request Custom Palette
+                </a>
+                <a href="planting-guide.html" class="btn btn-outline-light fw-bold rounded-pill">
+                  <i class="bi bi-journal-text me-1"></i> Read Planting Guide
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= COMPREHENSIVE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="row g-4 g-lg-5">
+        
+        <div class="col-lg-4">
+          <a class="brand-logo text-white mb-3 d-inline-flex" href="index.html">
+            <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Botanical Emblem" class="brand-emblem-art">
+            <span class="brand-text-col">
+              <span class="brand-heading"><span class="brand-sylvan">Sylvan</span> <span class="brand-amp">&amp;</span> <span class="brand-soil">Soil</span></span>
+              <span class="brand-caption">Native Plant Nursery &amp; Restoration</span>
+            </span>
+          </a>
+          <p class="footer-brand-desc">
+            Specialist native plant nursery &amp; ecological restoration consultancy dedicated to fostering biodiverse regional habitats, living soils, and sustainable landscapes.
+          </p>
+          <div class="footer-social-wrap" aria-label="Social connections">
+            <a href="https://facebook.com" class="social-circle" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" class="social-circle" aria-label="Instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" class="social-circle" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" class="social-circle" aria-label="YouTube" target="_blank" rel="noopener"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-2">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Home 1</a></li>
+            <li><a href="home-2.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Home 2</a></li>
+            <li><a href="products.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Plants</a></li>
+            <li><a href="habitat-restoration.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Restoration</a></li>
+            <li><a href="projects.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Projects Gallery</a></li>
+            <li><a href="planting-guide.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Planting Guide</a></li>
+            <li><a href="about.html" class="footer-link"><i class="bi bi-chevron-right small"></i> About Us</a></li>
+            <li><a href="contact.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <h5>Native Plants</h5>
+          <ul class="footer-links">
+            <li><a href="products.html?type=wildflower" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Wildflowers</a></li>
+            <li><a href="products.html?type=grass" class="footer-link"><i class="bi bi-chevron-right small"></i> Grasses &amp; Sedges</a></li>
+            <li><a href="products.html?type=shrub" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Understory Shrubs</a></li>
+            <li><a href="products.html?type=tree" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Keystone Trees</a></li>
+            <li><a href="products.html?type=pollinator" class="footer-link"><i class="bi bi-chevron-right small"></i> Pollinator Host Plants</a></li>
+            <li><a href="products.html?type=wetland" class="footer-link"><i class="bi bi-chevron-right small"></i> Rain Garden &amp; Wetland</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Get In Touch</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <strong>Nursery &amp; Growing Grounds</strong><br>
+              482 Sylvan Way, Ecological Valley, NY 12508
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <div>+1 (555) 789-3210</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <div>hello@sylvanandsoilnursery.com</div>
+          </div>
+
+          <h6 class="text-white mt-4 mb-2 font-display">Botanical Newsletter</h6>
+          <form class="footer-newsletter-wrap" data-validate>
+            <input type="email" class="footer-newsletter-input" placeholder="Enter your email" required aria-label="Email for botanical newsletter">
+            <button type="submit" class="footer-newsletter-btn" aria-label="Subscribe to newsletter">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </form>
+          <div class="form-feedback-alert d-none mt-2 small"></div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Sylvan &amp; Soil Native Plant Nursery &amp; Habitat Restoration Services. All rights reserved.
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal" class="text-white text-opacity-75">Privacy Policy</a>
+          <span>·</span>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal" class="text-white text-opacity-75">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top-btn" id="backToTop" aria-label="Back to top of page" title="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-display" id="privacyModalLabel">Privacy Policy</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small text-muted">Effective Date: January 1, 2026</p>
+          <p>At Sylvan &amp; Soil Native Plant Nursery, we respect your privacy and never sell customer data.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-botanical btn-sm-botanical" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-display" id="termsModalLabel">Terms &amp; Conditions</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small text-muted">Effective Date: January 1, 2026</p>
+          <p>All nursery stock is propagated from verified regional ecotypes.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-botanical btn-sm-botanical" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Application & Products JS -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/products.js"></script>
+</body>
+</html>

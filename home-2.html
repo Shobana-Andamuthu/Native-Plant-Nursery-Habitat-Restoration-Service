@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ecological Restoration &amp; Regional Native Flora — Sylvan &amp; Soil (Home 2)</title>
+  <meta name="description" content="Ecological habitat restoration, regional native plant sourcing, watershed conservation, and biodiversity corridors. Explore plants by region and habitat.">
+  
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" id="mainBootstrapCss">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- Custom Core & Responsive Styles -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ================= ATTRACTIVE BOTANICAL PAGE LOADER ================= -->
+  <div id="pageLoader" class="page-loader" aria-hidden="true">
+    <div class="loader-container">
+      <div class="loader-emblem-halo">
+        <div class="loader-orbit-ring"></div>
+        <div class="loader-pulse-glow"></div>
+        <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Logo Emblem" class="loader-emblem-art">
+      </div>
+      <div class="loader-brand-title">
+        <span class="brand-sylvan">Sylvan</span><span class="brand-amp">&amp;</span><span class="brand-soil">Soil</span>
+      </div>
+      <div class="loader-tagline">Native Plant Nursery &amp; Habitat Restoration</div>
+      <div class="loader-progress-track">
+        <div class="loader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-xl">
+      <div class="site-container">
+        
+        <!-- Brand Logo -->
+        <a class="brand-logo" href="index.html">
+          <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Botanical Emblem" class="brand-emblem-art">
+          <span class="brand-text-col">
+            <span class="brand-heading"><span class="brand-sylvan">Sylvan</span> <span class="brand-amp">&amp;</span> <span class="brand-soil">Soil</span></span>
+            <span class="brand-caption">Native Plant Nursery &amp; Restoration</span>
+          </span>
+        </a>
+
+        <!-- Desktop Navigation Links (>= 1200px) -->
+        <div class="collapse navbar-collapse justify-content-center d-none d-xl-flex" id="desktopNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item " href="index.html">Home 1 — Classic Nursery</a></li>
+                <li><a class="dropdown-item active" href="home-2.html">Home 2 — Ecological Restoration</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="products.html">Native Plants</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="habitat-restoration.html">Habitat Restoration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="planting-guide.html">Planting Guide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Header Actions: Theme, LTR/RTL, CTA, Mobile Trigger -->
+        <div class="header-actions">
+          <!-- LTR/RTL Toggle (Desktop Only) -->
+          <button type="button" class="nav-dir-btn d-none d-xl-inline-flex" data-dir-switch aria-label="Toggle text direction (LTR / RTL)" title="Switch Layout Direction">
+            <span class="dir-toggle-track">
+              <span class="dir-toggle-opt dir-opt-ltr active">LTR</span>
+              <span class="dir-toggle-opt dir-opt-rtl">RTL</span>
+            </span>
+          </button>
+
+          <!-- Dark Mode Toggle (Desktop Only) -->
+          <button type="button" class="nav-icon-btn d-none d-xl-inline-flex" data-theme-switch aria-label="Toggle light and dark mode" title="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+
+          <!-- Desktop Consultation CTA (Desktop Only) -->
+          <a class="btn-botanical btn-sm-botanical d-none d-xl-inline-flex" href="contact.html"><i class="bi bi-compass"></i> Consult</a>
+
+          <!-- Mobile Menu Hamburger Trigger (Mobile & Tablet < 1200px Only) -->
+          <button type="button" class="nav-icon-btn mobile-nav-trigger d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Open navigation menu">
+            <i class="bi bi-list fs-4"></i>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+      <!-- ================= MOBILE MENU OFFCANVAS ================= -->
+  <div class="offcanvas offcanvas-end mobile-menu-offcanvas" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header border-bottom">
+      <a class="brand-logo" href="index.html">
+        <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Botanical Emblem" class="brand-emblem-art">
+        <span class="brand-text-col">
+          <span class="brand-heading"><span class="brand-sylvan">Sylvan</span> <span class="brand-amp">&amp;</span> <span class="brand-soil">Soil</span></span>
+          <span class="brand-caption">Native Plant Nursery &amp; Restoration</span>
+        </span>
+      </a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <div class="mobile-nav-wrapper">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item">
+            <a class="mobile-nav-link d-flex align-items-center justify-content-between collapsed active" data-bs-toggle="collapse" href="#mobileHomeSub" role="button" aria-expanded="false">
+              <span><i class="bi bi-house-door me-2 text-forest"></i> Home</span>
+              <i class="bi bi-chevron-down small"></i>
+            </a>
+            <div class="collapse" id="mobileHomeSub">
+              <div class="ps-3 pt-2 pb-1 d-flex flex-column gap-1 border-start ms-3 my-1">
+                <a class="mobile-sublink " href="index.html"><i class="bi bi-flower2 me-2"></i> Home 1 — Classic Nursery</a>
+                <a class="mobile-sublink active" href="home-2.html"><i class="bi bi-tree me-2"></i> Home 2 — Ecological Restoration</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="products.html"><i class="bi bi-grid me-2 text-forest"></i> Native Plants</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="habitat-restoration.html"><i class="bi bi-shield-check me-2 text-forest"></i> Habitat Restoration</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="projects.html"><i class="bi bi-images me-2 text-forest"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="planting-guide.html"><i class="bi bi-journal-bookmark me-2 text-forest"></i> Planting Guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="about.html"><i class="bi bi-info-circle me-2 text-forest"></i> About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="mobile-nav-link " href="contact.html"><i class="bi bi-envelope me-2 text-forest"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile Actions Panel (Buttons Only, Perfectly Centered) -->
+      <div class="mobile-menu-footer pt-3 border-top mt-4">
+        <div class="mobile-controls-panel mb-3 d-flex align-items-center justify-content-center gap-3 py-2">
+          <!-- Theme Toggle Button -->
+          <button type="button" class="nav-icon-btn" data-theme-switch aria-label="Toggle light and dark mode" title="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+
+          <!-- LTR / RTL Direction Toggle Button -->
+          <button type="button" class="nav-dir-btn" data-dir-switch aria-label="Toggle text direction (LTR / RTL)" title="Switch Layout Direction">
+            <span class="dir-toggle-track">
+              <span class="dir-toggle-opt dir-opt-ltr active">LTR</span>
+              <span class="dir-toggle-opt dir-opt-rtl">RTL</span>
+            </span>
+          </button>
+        </div>
+
+        <a class="btn-botanical w-100 justify-content-center py-2" href="contact.html">
+          <i class="bi bi-compass"></i> Schedule Consultation
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ================= SECTION 1: ALTERNATIVE FULL-SCREEN HERO (SPLIT EDITORIAL) ================= -->
+    <section class="hero-split-fullscreen" id="heroHome2">
+      <div class="site-container">
+        <div class="row align-items-center g-4 g-lg-5">
+          
+          <!-- Split Text Column -->
+          <div class="col-lg-6 hero-split-content">
+            <span class="site-eyebrow mb-3">
+              <i class="bi bi-globe-americas"></i> Landscape Scale Restoration
+            </span>
+            <h1 class="display-4 fw-bold mb-3">
+              Regenerating Native Ecosystems From Seed to Mature Canopy
+            </h1>
+            <p class="lead text-muted mb-4">
+              We design, install, and steward resilient habitats using site-matched regional native ecotypes. From residential pollinator meadows to municipal stormwater wetlands, we build living ecology that endures.
+            </p>
+            <div class="d-flex flex-wrap gap-3 hero-btns">
+              <a href="products.html" class="btn-botanical">
+                <i class="bi bi-compass"></i> Explore Regional Plants
+              </a>
+              <a href="habitat-restoration.html" class="btn-outline-botanical">
+                <i class="bi bi-shield-shaded"></i> Discover Restoration Services
+              </a>
+            </div>
+
+            <!-- Mini stats row -->
+            <div class="hero-split-stats">
+              <div class="hero-stat-item">
+                <strong class="font-display d-block fs-3" style="color:var(--color-forest);">250+</strong>
+                <span class="small text-muted">Acres Restored</span>
+              </div>
+              <div class="hero-stat-item">
+                <strong class="font-display d-block fs-3" style="color:var(--color-forest);">120+</strong>
+                <span class="small text-muted">Native Ecotypes</span>
+              </div>
+              <div class="hero-stat-item">
+                <strong class="font-display d-block fs-3" style="color:var(--color-forest);">98%</strong>
+                <span class="small text-muted">Survival Rate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Split Visual Column with Floating Badge -->
+          <div class="col-lg-6 hero-split-image-col">
+            <div class="hero-split-image-wrap">
+              <img src="assets/images/hero/hero-home2.jpg" alt="Ecological landscape architecture project with native prairie grass and stone pathway" loading="eager">
+              <div class="hero-floating-stat">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="brand-mark" style="width:42px;height:42px;background:var(--color-sage);color:#121914;flex-shrink:0;">
+                    <i class="bi bi-flower1 fs-5"></i>
+                  </div>
+                  <div>
+                    <strong class="d-block font-display fs-5 text-white">Living Soil Architecture</strong>
+                    <span class="small text-white text-opacity-90">Deep root mycorrhizal enhancement</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 2: DISCOVER PLANTS BY REGION ================= -->
+    <section class="site-section bg-surface" id="plantsByRegion">
+      <div class="site-container">
+        
+        <div class="site-section-head text-center">
+          <span class="site-eyebrow"><i class="bi bi-map-fill"></i> Geographic Provenance</span>
+          <h2 class="display-5">Discover Plants by Region</h2>
+          <p class="text-muted">Explore regional plant communities matched to local bedrock, precipitation patterns, and evolutionary history.</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <div class="region-grid">
+
+          <!-- Region 1: Coastal Habitats -->
+          <div class="category-card">
+            <img src="assets/images/regions/coastal-habitat.jpg" alt="Coastal native dune and maritime grass ecosystem" loading="eager">
+            <div class="category-overlay">
+              <span class="category-badge">Salt Spray Tolerant</span>
+              <h3 class="category-title">Coastal Habitats</h3>
+              <p class="category-desc">Salt-tolerant beachgrasses, bayberry, and maritime perennials adapted to shifting sand and ocean winds.</p>
+              <a href="products.html?region=coastal" class="category-cta">
+                Explore Plants <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Region 2: Woodland Ecosystems -->
+          <div class="category-card">
+            <img src="assets/images/regions/woodland-ecosystem.jpg" alt="Mature deciduous forest woodland floor" loading="eager">
+            <div class="category-overlay">
+              <span class="category-badge">Rich Humus Soils</span>
+              <h3 class="category-title">Woodland Ecosystems</h3>
+              <p class="category-desc">Understory ferns, spring ephemerals, and canopy hardwoods thriving under dappled light and leaf litter.</p>
+              <a href="products.html?region=woodland" class="category-cta">
+                Explore Plants <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Region 3: Prairie & Meadow Habitats -->
+          <div class="category-card">
+            <img src="assets/images/regions/prairie-meadow.jpg" alt="Native tallgrass prairie landscape with wildflowers" loading="eager">
+            <div class="category-overlay">
+              <span class="category-badge">Full Sun Plains</span>
+              <h3 class="category-title">Prairie &amp; Meadow Habitats</h3>
+              <p class="category-desc">Deep-rooted big bluestem, coneflowers, and asters designed by nature for open sunshine and seasonal droughts.</p>
+              <a href="products.html?region=prairie" class="category-cta">
+                Explore Plants <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Region 4: Wetlands & Marsh -->
+          <div class="category-card">
+            <img src="assets/images/regions/wetlands-marsh.jpg" alt="Native freshwater wetland marsh ecosystem" loading="eager">
+            <div class="category-overlay">
+              <span class="category-badge">Hydric Soils</span>
+              <h3 class="category-title">Wetland &amp; Marsh Habitats</h3>
+              <p class="category-desc">Cattails, rushes, blue flag iris, and swamp milkweeds that purify water and thrive in saturated soils.</p>
+              <a href="products.html?region=wetland" class="category-cta">
+                Explore Plants <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Region 5: Dry & Drought-Prone -->
+          <div class="category-card">
+            <img src="assets/images/regions/drought-landscape.jpg" alt="Dry rocky slope with drought-tolerant native plants" loading="eager">
+            <div class="category-overlay">
+              <span class="category-badge">Xeric Conditions</span>
+              <h3 class="category-title">Dry &amp; Drought-Prone</h3>
+              <p class="category-desc">Gravel-loving penstemons, aromatic sumacs, and sideoats grama engineered for steep slopes and low water.</p>
+              <a href="products.html?region=dry" class="category-cta">
+                Explore Plants <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Region 6: Shaded Garden Environments -->
+          <div class="category-card">
+            <img src="assets/images/regions/shaded-garden.jpg" alt="Dense green shaded forest garden" loading="eager">
+            <div class="category-overlay">
+              <span class="category-badge">Canopy Shade</span>
+              <h3 class="category-title">Shaded Environments</h3>
+              <p class="category-desc">Wild ginger, foamflower, and Pennsylvania sedge groundcovers that eliminate bare dirt under mature trees.</p>
+              <a href="products.html?region=shade" class="category-cta">
+                Explore Plants <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3: PLANTS FOR EVERY HABITAT ================= -->
+    <section class="site-section bg-muted-soft" id="habitatSolutions">
+      <div class="site-container">
+        
+        <div class="site-section-head text-center">
+          <span class="site-eyebrow"><i class="bi bi-flower2"></i> Site-Specific Solutions</span>
+          <h2 class="display-5">Plants for Every Habitat</h2>
+          <p class="text-muted">Targeted ecological plant palettes formulated to solve specific landscape challenges and biodiversity goals.</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <div class="habitat-showcase-grid">
+
+          <!-- Habitat 1: Pollinator Gardens -->
+          <div class="habitat-showcase-card">
+            <div class="habitat-showcase-media">
+              <img src="assets/images/habitats/habitat-pollinator.jpg" alt="Vibrant pollinator garden with bees and butterflies" loading="eager">
+              <span class="habitat-showcase-badge">Keystone Nectar</span>
+              <span class="habitat-showcase-index">01</span>
+            </div>
+            <div class="habitat-showcase-body">
+              <span class="habitat-showcase-tag">Ecosystem Service · Pollinator Support</span>
+              <h3 class="habitat-showcase-title">Pollinator Gardens &amp; Corridors</h3>
+              <p class="habitat-showcase-desc">Multi-season nectar bridges ensuring continuous pollen and nectar from early spring emergence to autumn pre-migration for native bees and butterflies.</p>
+              <div class="habitat-perks-box">
+                <div class="habitat-perk-item"><i class="bi bi-check-circle-fill"></i> <span>Continuous multi-season bloom schedule</span></div>
+                <div class="habitat-perk-item"><i class="bi bi-check-circle-fill"></i> <span>Larval host plants for regional butterflies</span></div>
+              </div>
+              <div class="habitat-showcase-footer">
+                <a href="products.html?habitat=pollinator" class="habitat-showcase-link">Explore Pollinator Species <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Habitat 2: Rain Gardens -->
+          <div class="habitat-showcase-card">
+            <div class="habitat-showcase-media">
+              <img src="assets/images/habitats/habitat-rain-garden.jpg" alt="Engineered rain garden holding rainwater runoff" loading="eager">
+              <span class="habitat-showcase-badge">Hydric Adaptable</span>
+              <span class="habitat-showcase-index">02</span>
+            </div>
+            <div class="habitat-showcase-body">
+              <span class="habitat-showcase-tag">Stormwater Filtration · Erosion Defense</span>
+              <h3 class="habitat-showcase-title">Rain Gardens &amp; Bioswales</h3>
+              <p class="habitat-showcase-desc">Specially formulated plants with flexible root crowns that withstand both 48-hour torrential ponding and extended midsummer drought cycles.</p>
+              <div class="habitat-perks-box">
+                <div class="habitat-perk-item"><i class="bi bi-check-circle-fill"></i> <span>Flexible roots withstand temporary flooding</span></div>
+                <div class="habitat-perk-item"><i class="bi bi-check-circle-fill"></i> <span>Filters road sediments &amp; nitrogen runoff</span></div>
+              </div>
+              <div class="habitat-showcase-footer">
+                <a href="products.html?habitat=rain-garden" class="habitat-showcase-link">Explore Rain Garden Species <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Habitat 3: Native Meadows -->
+          <div class="habitat-showcase-card">
+            <div class="habitat-showcase-media">
+              <img src="assets/images/habitats/habitat-meadow.jpg" alt="Expansive native meadow swaying in the wind" loading="eager">
+              <span class="habitat-showcase-badge">Zero-Mow Turf</span>
+              <span class="habitat-showcase-index">03</span>
+            </div>
+            <div class="habitat-showcase-body">
+              <span class="habitat-showcase-tag">Carbon Sequestration · Low Maintenance</span>
+              <h3 class="habitat-showcase-title">Native Meadows &amp; Prairies</h3>
+              <p class="habitat-showcase-desc">High-diversity matrices pairing 60% wildflowers with 40% non-aggressive native bunchgrasses to permanently exclude aggressive lawn weeds.</p>
+              <div class="habitat-perks-box">
+                <div class="habitat-perk-item"><i class="bi bi-check-circle-fill"></i> <span>60% wildflowers &amp; 40% bunchgrass matrix</span></div>
+                <div class="habitat-perk-item"><i class="bi bi-check-circle-fill"></i> <span>Deep root carbon storage up to 15ft depth</span></div>
+              </div>
+              <div class="habitat-showcase-footer">
+                <a href="products.html?habitat=meadow" class="habitat-showcase-link">Explore Meadow Mixes <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Habitat 4: Woodland Edges -->
+          <div class="habitat-showcase-card">
+            <div class="habitat-showcase-media">
+              <img src="assets/images/habitats/habitat-woodland-edge.jpg" alt="Transition zone ecotone between forest and meadow" loading="eager">
+              <span class="habitat-showcase-badge">Understory Shield</span>
+              <span class="habitat-showcase-index">04</span>
+            </div>
+            <div class="habitat-showcase-body">
+              <span class="habitat-showcase-tag">Multi-Layer Canopy · Avian Shelter</span>
+              <h3 class="habitat-showcase-title">Woodland Edges &amp; Hedgerows</h3>
+              <p class="habitat-showcase-desc">Ecotone layers of native understory shrubs and architectural forbs providing vital nesting architecture, berry forage, and wind deflection.</p>
+              <div class="habitat-perks-box">
+                <div class="habitat-perk-item"><i class="bi bi-check-circle-fill"></i> <span>Understory shrubs with seasonal berry forage</span></div>
+                <div class="habitat-perk-item"><i class="bi bi-check-circle-fill"></i> <span>Critical nesting cover for migratory birds</span></div>
+              </div>
+              <div class="habitat-showcase-footer">
+                <a href="products.html?habitat=woodland" class="habitat-showcase-link">Explore Edge Species <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Habitat 5: Wildlife Corridors -->
+          <div class="habitat-showcase-card">
+            <div class="habitat-showcase-media">
+              <img src="assets/images/habitats/habitat-wildlife-corridor.jpg" alt="Continuous green wildlife corridor connecting habitats" loading="eager">
+              <span class="habitat-showcase-badge">Bio-Connectivity</span>
+              <span class="habitat-showcase-index">05</span>
+            </div>
+            <div class="habitat-showcase-body">
+              <span class="habitat-showcase-tag">Landscape Integration · Patch Reconnect</span>
+              <h3 class="habitat-showcase-title">Contiguous Wildlife Corridors</h3>
+              <p class="habitat-showcase-desc">Connecting isolated islands of suburban habitat with unbroken bands of shelter, seed sources, and protective migration routes for native fauna.</p>
+              <div class="habitat-perks-box">
+                <div class="habitat-perk-item"><i class="bi bi-check-circle-fill"></i> <span>Links fragmented green spaces smoothly</span></div>
+                <div class="habitat-perk-item"><i class="bi bi-check-circle-fill"></i> <span>Preserves genetic diversity of pollinators</span></div>
+              </div>
+              <div class="habitat-showcase-footer">
+                <a href="products.html?habitat=corridor" class="habitat-showcase-link">Explore Corridor Palettes <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Habitat 6: Low-Water Landscapes -->
+          <div class="habitat-showcase-card">
+            <div class="habitat-showcase-media">
+              <img src="assets/images/habitats/habitat-low-water.jpg" alt="Drought-tolerant native plant landscape" loading="eager">
+              <span class="habitat-showcase-badge">Xeric Resilient</span>
+              <span class="habitat-showcase-index">06</span>
+            </div>
+            <div class="habitat-showcase-body">
+              <span class="habitat-showcase-tag">Zero Irrigation · Summer Heat Defense</span>
+              <h3 class="habitat-showcase-title">Low-Water &amp; Drought Landscapes</h3>
+              <p class="habitat-showcase-desc">Zero-irrigation plant communities once established, leveraging deep prairie taproots that thrive through scorching summer droughts without tap water.</p>
+              <div class="habitat-perks-box">
+                <div class="habitat-perk-item"><i class="bi bi-check-circle-fill"></i> <span>100% elimination of municipal irrigation</span></div>
+                <div class="habitat-perk-item"><i class="bi bi-check-circle-fill"></i> <span>Deep prairie taproots retain subsoil health</span></div>
+              </div>
+              <div class="habitat-showcase-footer">
+                <a href="products.html?habitat=low-water" class="habitat-showcase-link">Explore Xeric Species <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4: RESTORATION PROCESS ================= -->
+    <section class="site-section bg-surface" id="restorationProcess">
+      <div class="site-container">
+        
+        <div class="site-section-head text-center">
+          <span class="site-eyebrow"><i class="bi bi-diagram-3-fill"></i> Methodical Ecology</span>
+          <h2 class="display-5">Our 6-Step Restoration Process</h2>
+          <p class="text-muted">How our restoration ecologists transform degraded land into self-regulating, thriving native communities.</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <div class="process-grid-modern">
+
+          <!-- Step 1 -->
+          <div class="process-step-card">
+            <div class="process-step-top">
+              <span class="process-step-num">01</span>
+              <div class="process-step-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            </div>
+            <h3 class="process-step-title">Site Assessment &amp; Baselines</h3>
+            <p class="process-step-desc">High-precision topographic mapping, sunlight trajectory tracking, existing vegetation inventory, and historical disturbance diagnostics.</p>
+            <span class="process-deliverable-badge"><i class="bi bi-clipboard2-check"></i> Eco-Topographic Map</span>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-step-card">
+            <div class="process-step-top">
+              <span class="process-step-num">02</span>
+              <div class="process-step-icon"><i class="bi bi-droplet-half"></i></div>
+            </div>
+            <h3 class="process-step-title">Soil &amp; Hydrology Evaluation</h3>
+            <p class="process-step-desc">Percolation testing, pH and compaction profiling, moisture retention analysis, and mycorrhizal fungal health assessment.</p>
+            <span class="process-deliverable-badge"><i class="bi bi-clipboard2-check"></i> Soil Fungal Profile</span>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-step-card">
+            <div class="process-step-top">
+              <span class="process-step-num">03</span>
+              <div class="process-step-icon"><i class="bi bi-palette-fill"></i></div>
+            </div>
+            <h3 class="process-step-title">Native Provenance Selection</h3>
+            <p class="process-step-desc">Custom seed blend formulation and nursery plug selection strictly matching local bedrock, microclimates, and regional wildlife goals.</p>
+            <span class="process-deliverable-badge"><i class="bi bi-clipboard2-check"></i> Certified Eco-Type Seed</span>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-step-card">
+            <div class="process-step-top">
+              <span class="process-step-num">04</span>
+              <div class="process-step-icon"><i class="bi bi-shield-check"></i></div>
+            </div>
+            <h3 class="process-step-title">Non-Chemical Site Prep</h3>
+            <p class="process-step-desc">Targeted organic solarization, stale seedbed germination cycles, and systematic eradication of aggressive non-native competitors.</p>
+            <span class="process-deliverable-badge"><i class="bi bi-clipboard2-check"></i> Depleted Weed Seed Bank</span>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="process-step-card">
+            <div class="process-step-top">
+              <span class="process-step-num">05</span>
+              <div class="process-step-icon"><i class="bi bi-flower1"></i></div>
+            </div>
+            <h3 class="process-step-title">Precision Plant Installation</h3>
+            <p class="process-step-desc">High-density installation of deep-cell nursery plugs, precision drill seeding, and organic erosion-control mulching for optimal rooting.</p>
+            <span class="process-deliverable-badge"><i class="bi bi-clipboard2-check"></i> High-Density Plug Matrix</span>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="process-step-card">
+            <div class="process-step-top">
+              <span class="process-step-num">06</span>
+              <div class="process-step-icon"><i class="bi bi-arrow-repeat"></i></div>
+            </div>
+            <h3 class="process-step-title">Adaptive 3-Year Stewardship</h3>
+            <p class="process-step-desc">Three-year ecological monitoring, high-mow weed canopy management, and supplemental enrichment planting for climax succession.</p>
+            <span class="process-deliverable-badge"><i class="bi bi-clipboard2-check"></i> 3-Year Monitoring Protocol</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 5: CONSERVATION IMPACT & PROJECT HIGHLIGHTS ================= -->
+    <section class="site-section bg-muted-soft" id="conservationImpact">
+      <div class="site-container">
+        
+        <div class="site-section-head text-center">
+          <span class="site-eyebrow"><i class="bi bi-trophy-fill"></i> Field Results</span>
+          <h2 class="display-5">Conservation Impact &amp; Project Highlights</h2>
+          <p class="text-muted">Explore tangible ecological achievements across our regional restoration sites.</p>
+          <div class="site-divider"></div>
+        </div>
+
+        <div class="row g-4 align-items-stretch mb-5">
+          <div class="col-lg-6 d-flex">
+            <div class="project-card">
+              <div class="project-media">
+                <img src="assets/images/projects/project-cedar-creek.jpg" alt="Cedar Creek Riparian Corridor restoration" loading="eager">
+              </div>
+              <div class="project-body">
+                <span class="project-habitat-tag">Riparian Watershed &middot; 14 Acres</span>
+                <h3 class="project-title">Cedar Creek Wetland Corridor</h3>
+                <p class="project-desc">Stabilized 2,400 linear feet of severely eroding agricultural stream banks using native dogwoods, sedges, and emergent aquatic vegetation.</p>
+                <div class="project-metrics">
+                  <div class="project-metric-item">
+                    <strong>85%</strong>
+                    <span>Sediment Runoff Reduction</span>
+                  </div>
+                  <div class="project-metric-item">
+                    <strong>34</strong>
+                    <span>Native Bird Species Documented</span>
+                  </div>
+                </div>
+                <a href="projects.html" class="btn-botanical btn-sm-botanical">Explore Case Study</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex">
+            <div class="project-card">
+              <div class="project-media">
+                <img src="assets/images/projects/project-pine-ridge.jpg" alt="Pine Ridge Tallgrass Prairie Meadow restoration" loading="eager">
+              </div>
+              <div class="project-body">
+                <span class="project-habitat-tag">Tallgrass Prairie &middot; 28 Acres</span>
+                <h3 class="project-title">Pine Ridge Native Meadow</h3>
+                <p class="project-desc">Replaced abandoned turf lawn with a thriving native tallgrass ecosystem harboring 42 regional wildflower species and vital wild bee nesting sites.</p>
+                <div class="project-metrics">
+                  <div class="project-metric-item">
+                    <strong>4.2x</strong>
+                    <span>Pollinator Abundance Increase</span>
+                  </div>
+                  <div class="project-metric-item">
+                    <strong>Zero</strong>
+                    <span>Municipal Irrigation Used</span>
+                  </div>
+                </div>
+                <a href="projects.html" class="btn-botanical btn-sm-botanical">Explore Case Study</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric Counters Row -->
+        <div class="p-4 p-md-5 rounded-4 bg-surface border border-subtle shadow-sm text-center">
+          <div class="row g-4">
+            <div class="col-6 col-md-3">
+              <div class="display-5 fw-bold text-success font-display">180k+</div>
+              <div class="text-muted small fw-semibold">Native Plugs Grown Annually</div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="display-5 fw-bold text-success font-display">45+</div>
+              <div class="text-muted small fw-semibold">Regional Habitat Projects</div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="display-5 fw-bold text-success font-display">94%</div>
+              <div class="text-muted small fw-semibold">Pollinator Utilization Gain</div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="display-5 fw-bold text-success font-display">100%</div>
+              <div class="text-muted small fw-semibold">Pesticide-Free Living Soils</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 6: FINAL CTA & COMPREHENSIVE FOOTER ================= -->
+    <section class="site-section section-cta bg-surface" id="finalCtaFooter2">
+      <div class="site-container">
+        
+        <!-- CTA Banner -->
+        <div class="cta-banner">
+          <div class="row align-items-center justify-content-between g-4 position-relative" style="z-index: 2;">
+            <div class="col-lg-7">
+              <span class="badge bg-white text-dark font-display px-3 py-2 rounded-pill mb-2">
+                <i class="bi bi-chat-square-text-fill text-success"></i> Consult with an Ecologist
+              </span>
+              <h2>Schedule an Ecological Site Assessment</h2>
+              <p>
+                Partner with our restoration team to formulate site-specific planting plans, conduct soil diagnostics, and restore enduring natural diversity.
+              </p>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+              <div class="cta-banner-btns">
+                <a href="contact.html" class="btn btn-light text-dark fw-bold rounded-pill">
+                  <i class="bi bi-calendar-event me-1"></i> Book Consultation
+                </a>
+                <a href="products.html" class="btn btn-outline-light fw-bold rounded-pill">
+                  <i class="bi bi-grid-3x3-gap me-1"></i> Browse All 15+ Native Species in Catalog
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= COMPREHENSIVE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="row g-4 g-lg-5">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="col-lg-4">
+          <a class="brand-logo text-white mb-3 d-inline-flex" href="index.html">
+            <img src="assets/images/logo-emblem.png" alt="Sylvan &amp; Soil Botanical Emblem" class="brand-emblem-art">
+            <span class="brand-text-col">
+              <span class="brand-heading"><span class="brand-sylvan">Sylvan</span> <span class="brand-amp">&amp;</span> <span class="brand-soil">Soil</span></span>
+              <span class="brand-caption">Native Plant Nursery &amp; Restoration</span>
+            </span>
+          </a>
+          <p class="footer-brand-desc">
+            Specialist native plant nursery &amp; ecological restoration consultancy dedicated to fostering biodiverse regional habitats, living soils, and sustainable landscapes.
+          </p>
+          <div class="footer-social-wrap" aria-label="Social connections">
+            <a href="https://facebook.com" class="social-circle" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" class="social-circle" aria-label="Instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" class="social-circle" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" class="social-circle" aria-label="YouTube" target="_blank" rel="noopener"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div class="col-sm-6 col-lg-2">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Home 1</a></li>
+            <li><a href="home-2.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Home 2</a></li>
+            <li><a href="products.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Plants</a></li>
+            <li><a href="habitat-restoration.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Restoration</a></li>
+            <li><a href="projects.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Projects Gallery</a></li>
+            <li><a href="planting-guide.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Planting Guide</a></li>
+            <li><a href="about.html" class="footer-link"><i class="bi bi-chevron-right small"></i> About Us</a></li>
+            <li><a href="contact.html" class="footer-link"><i class="bi bi-chevron-right small"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Categories -->
+        <div class="col-sm-6 col-lg-3">
+          <h5>Native Plants</h5>
+          <ul class="footer-links">
+            <li><a href="products.html?type=wildflower" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Wildflowers</a></li>
+            <li><a href="products.html?type=grass" class="footer-link"><i class="bi bi-chevron-right small"></i> Grasses &amp; Sedges</a></li>
+            <li><a href="products.html?type=shrub" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Understory Shrubs</a></li>
+            <li><a href="products.html?type=tree" class="footer-link"><i class="bi bi-chevron-right small"></i> Native Keystone Trees</a></li>
+            <li><a href="products.html?type=pollinator" class="footer-link"><i class="bi bi-chevron-right small"></i> Pollinator Host Plants</a></li>
+            <li><a href="products.html?type=wetland" class="footer-link"><i class="bi bi-chevron-right small"></i> Rain Garden &amp; Wetland</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Newsletter -->
+        <div class="col-lg-3">
+          <h5>Get In Touch</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <strong>Nursery &amp; Growing Grounds</strong><br>
+              482 Sylvan Way, Ecological Valley, NY 12508
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <div>+1 (555) 789-3210</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <div>hello@sylvanandsoilnursery.com</div>
+          </div>
+
+          <h6 class="text-white mt-4 mb-2 font-display">Botanical Newsletter</h6>
+          <form class="footer-newsletter-wrap" data-validate>
+            <input type="email" class="footer-newsletter-input" placeholder="Enter your email" required aria-label="Email for botanical newsletter">
+            <button type="submit" class="footer-newsletter-btn" aria-label="Subscribe to newsletter">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </form>
+          <div class="form-feedback-alert d-none mt-2 small"></div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Sylvan &amp; Soil Native Plant Nursery &amp; Habitat Restoration Services. All rights reserved.
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal" class="text-white text-opacity-75">Privacy Policy</a>
+          <span>·</span>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal" class="text-white text-opacity-75">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= BACK TO TOP BUTTON ================= -->
+  <button type="button" class="back-to-top-btn" id="backToTop" aria-label="Back to top of page" title="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- ================= PRIVACY POLICY MODAL ================= -->
+  <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-display" id="privacyModalLabel">Privacy Policy</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small text-muted">Effective Date: January 1, 2026</p>
+          <p>At Sylvan &amp; Soil Native Plant Nursery, we respect your privacy and are committed to protecting any personal information you provide when requesting consultations, plant availability lists, or newsletter subscriptions.</p>
+          <h6 class="font-display mt-3">Information We Collect</h6>
+          <p class="small text-muted">We collect your contact details (name, email, phone) and project site specifications solely to deliver plant selections and restoration proposals. We never sell or distribute your data to third parties.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-botanical btn-sm-botanical" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TERMS MODAL ================= -->
+  <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-display" id="termsModalLabel">Terms &amp; Conditions</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small text-muted">Effective Date: January 1, 2026</p>
+          <h6 class="font-display mt-3">Plant Stock &amp; Regional Provenance</h6>
+          <p class="small text-muted">All nursery stock is propagated from verified non-invasive regional ecotypes. Plant availability is subject to seasonal dormancy cycles.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-botanical btn-sm-botanical" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Application JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
