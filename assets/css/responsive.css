@@ -139,22 +139,85 @@
     width: 50% !important;
   }
 
-  /* Split layout collapses into balanced stacks */
-  .hero-split-fullscreen {
-    min-height: auto !important;
-    padding: clamp(2.5rem, 5vw, 3.5rem) 0 !important;
+  /* Split layout responsive behavior:
+     - Landscape Tablets & iPad Pro (992px to 1199.98px): Fullscreen hero height (100svh - navbar-height)
+     - Portrait Tablets (768px to 991.98px): Stacked vertically with full container width, not squished 50% */
+  @media (min-width: 992px) {
+    .hero-split-fullscreen {
+      min-height: calc(100svh - var(--navbar-height)) !important;
+      height: calc(100svh - var(--navbar-height)) !important;
+      padding: 0 !important;
+      display: flex !important;
+      align-items: center !important;
+    }
+    .hero-split-fullscreen .site-container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    .hero-split-fullscreen .row {
+      flex-direction: row !important;
+      align-items: center !important;
+      width: 100%;
+      margin: 0 !important;
+    }
+    .hero-split-content {
+      flex: 0 0 50% !important;
+      max-width: 50% !important;
+      width: 50% !important;
+    }
+    .hero-split-image-col {
+      flex: 0 0 50% !important;
+      max-width: 50% !important;
+      width: 50% !important;
+    }
+    .hero-split-content h1 {
+      font-size: clamp(2.1rem, 3.2vw, 2.75rem) !important;
+      line-height: 1.18 !important;
+    }
+    .hero-split-image-wrap {
+      min-height: 380px !important;
+      max-height: 480px !important;
+      aspect-ratio: 4 / 3 !important;
+      margin-top: 0 !important;
+    }
   }
 
-  .hero-split-fullscreen .row {
-    flex-direction: column !important;
-  }
-
-  .hero-split-image-wrap {
-    min-height: 380px !important;
-    max-height: 460px !important;
-    aspect-ratio: 16 / 10 !important;
-    margin-top: 1.5rem !important;
-    margin-bottom: 0 !important;
+  @media (max-width: 991.98px) {
+    .hero-split-fullscreen {
+      min-height: auto !important;
+      padding: clamp(2.5rem, 5vw, 4rem) 0 !important;
+    }
+    .hero-split-fullscreen .row {
+      flex-direction: column !important;
+      align-items: stretch !important;
+    }
+    .hero-split-content,
+    .hero-split-image-col {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+    .hero-split-content h1 {
+      font-size: clamp(2rem, 4.2vw, 2.75rem) !important;
+      line-height: 1.22 !important;
+      max-width: 100% !important;
+    }
+    .hero-split-content p.lead {
+      max-width: 100% !important;
+      font-size: 1.05rem !important;
+      margin-bottom: 1.5rem !important;
+    }
+    .hero-split-image-wrap {
+      width: 100% !important;
+      max-width: 650px !important;
+      min-height: 320px !important;
+      max-height: 440px !important;
+      aspect-ratio: 16 / 10 !important;
+      margin-top: 1.5rem !important;
+      margin-bottom: 0 !important;
+    }
   }
 
   .editorial-media {
@@ -171,7 +234,9 @@
   }
 
   .cta-banner-btns .btn {
-    flex: 1 1 200px !important;
+    flex: 1 1 240px !important;
+    width: auto !important;
+    max-width: 100% !important;
   }
 }
 
@@ -256,6 +321,24 @@
 
   .hero-split-fullscreen .row {
     flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .hero-split-content,
+  .hero-split-image-col {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .hero-split-content h1 {
+    font-size: clamp(1.85rem, 5.5vw, 2.35rem) !important;
+    line-height: 1.22 !important;
+    max-width: 100% !important;
+  }
+
+  .hero-split-content p.lead {
+    max-width: 100% !important;
   }
 
   .hero-split-image-wrap {
@@ -264,6 +347,8 @@
     aspect-ratio: 16 / 10 !important;
     margin-top: 1.25rem !important;
     margin-bottom: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .hero-floating-stat {
@@ -348,6 +433,31 @@
     width: 100%;
   }
 
+  .product-footer .btn-botanical,
+  .product-footer .btn-sm-botanical,
+  .product-footer a.btn-botanical,
+  .header-actions .btn-botanical,
+  .header-actions a.btn-botanical {
+    width: auto !important;
+    min-width: 80px;
+    padding: 0.42rem 0.95rem !important;
+    font-size: 0.85rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  .product-footer {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+  }
+
+  .product-price {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+  }
+
   .product-specs {
     gap: 0.35rem;
   }
@@ -364,6 +474,16 @@
   .filter-tab-btn {
     padding: 0.4rem 0.85rem;
     font-size: 0.82rem;
+  }
+
+  .provenance-metric-row {
+    grid-template-columns: 1fr !important;
+    gap: 0.2rem !important;
+  }
+
+  .provenance-metric-val,
+  .provenance-metric-row strong {
+    text-align: left !important;
   }
 }
 
@@ -386,6 +506,31 @@
   .site-container {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+  }
+
+  .product-footer .btn-botanical,
+  .product-footer .btn-sm-botanical,
+  .product-footer a.btn-botanical {
+    width: auto !important;
+    min-width: 72px;
+    padding: 0.35rem 0.75rem !important;
+    font-size: 0.78rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  @media (max-width: 319.98px) {
+    .product-footer {
+      flex-direction: column !important;
+      align-items: stretch !important;
+      gap: 0.45rem !important;
+    }
+    .product-footer .btn-botanical,
+    .product-footer .btn-sm-botanical,
+    .product-footer a.btn-botanical {
+      width: 100% !important;
+      text-align: center !important;
+      margin-left: 0 !important;
+    }
   }
 
   .brand-logo {
@@ -507,10 +652,16 @@
 }
 
 /* Defensive rules against horizontal overflow across all sizes — PRESERVES STICKY NAVBAR */
-html, body {
+html {
   overflow-x: clip !important;
   max-width: 100%;
+}
+
+body {
+  max-width: 100%;
   width: 100%;
+  margin: 0;
+  position: relative;
 }
 
 .site-header {
