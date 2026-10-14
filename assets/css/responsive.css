@@ -485,6 +485,48 @@
   .provenance-metric-row strong {
     text-align: left !important;
   }
+
+  /* Empirical Telemetry Dashboard HUD on Mobile */
+  .telemetry-media-terminal {
+    margin: 8px !important;
+    min-height: 300px !important;
+  }
+
+  .telemetry-hud-overlay {
+    padding: 12px !important;
+  }
+
+  .hud-top-bar {
+    flex-wrap: wrap !important;
+    gap: 0.4rem !important;
+    justify-content: space-between !important;
+  }
+
+  .hud-live-pill {
+    font-size: 0.65rem !important;
+    padding: 3px 8px !important;
+  }
+
+  .hud-coords {
+    font-size: 0.72rem !important;
+  }
+
+  .hud-bottom-specs {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 4px !important;
+    padding: 8px 6px !important;
+  }
+
+  .hud-stat-chip small {
+    font-size: 0.6rem !important;
+  }
+
+  .hud-stat-chip strong {
+    font-size: 0.75rem !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
 }
 
 /* ================= 7. ULTRA-NARROW SCREENS (200px to 359px) =================

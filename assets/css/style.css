@@ -2044,6 +2044,13 @@ html.dark .habitat-showcase-link {
   color: var(--color-botanical);
 }
 
+[data-bs-theme="dark"] .habitat-showcase-card:hover .habitat-showcase-link,
+html.dark .habitat-showcase-card:hover .habitat-showcase-link,
+[data-bs-theme="dark"] .habitat-showcase-link:hover,
+html.dark .habitat-showcase-link:hover {
+  color: #5fe39d !important;
+}
+
 /* 4. PROJECT GALLERY CARDS (MATHEMATICAL ALIGNMENT & EQUAL HEIGHTS) */
 .project-card {
   background-color: var(--bg-card);
@@ -4248,6 +4255,38 @@ html.dark .standard-tile-badge {
   line-height: 1.45;
 }
 
+[data-bs-theme="dark"] .guide-uniform-text,
+html.dark .guide-uniform-text {
+  color: var(--text-muted, #A3B5A3) !important;
+}
+
+[data-bs-theme="dark"] .diagnostic-card,
+html.dark .diagnostic-card {
+  background: var(--bg-card, #18241D) !important;
+  border-color: var(--border-subtle) !important;
+}
+
+[data-bs-theme="dark"] .diagnostic-card-title,
+html.dark .diagnostic-card-title {
+  color: var(--text-main, #F4F6F2) !important;
+}
+
+[data-bs-theme="dark"] .diagnostic-item,
+html.dark .diagnostic-item {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-bs-theme="dark"] .diagnostic-key,
+html.dark .diagnostic-key {
+  color: var(--color-sage, #9BAF8A) !important;
+}
+
+[data-bs-theme="dark"] .diagnostic-val,
+html.dark .diagnostic-val {
+  color: var(--text-muted, #A3B5A3) !important;
+}
+
 /* ==========================================================================
    PROJECTS: EMPIRICAL TELEMETRY & HABITAT RECOVERY DASHBOARD
    ========================================================================== */
@@ -4596,6 +4635,32 @@ html.dark .standard-tile-badge {
   flex-shrink: 0;
 }
 
+[data-bs-theme="dark"] .protocol-card,
+html.dark .protocol-card {
+  background: var(--bg-card, #18241D) !important;
+  border-color: var(--border-subtle) !important;
+}
+
+[data-bs-theme="dark"] .protocol-title,
+html.dark .protocol-title {
+  color: var(--text-main, #F4F6F2) !important;
+}
+
+[data-bs-theme="dark"] .protocol-desc,
+html.dark .protocol-desc {
+  color: var(--text-muted, #A3B5A3) !important;
+}
+
+[data-bs-theme="dark"] .protocol-list,
+html.dark .protocol-list {
+  border-top-color: var(--border-subtle, rgba(255, 255, 255, 0.12)) !important;
+}
+
+[data-bs-theme="dark"] .protocol-list li,
+html.dark .protocol-list li {
+  color: var(--text-main, #F4F6F2) !important;
+}
+
 /* ================= RESTORATION SHOWCASE GRID (HABITAT RESTORATION SERVICES) ================= */
 .restoration-showcase-grid {
   display: grid;
@@ -4769,6 +4834,53 @@ html.dark .standard-tile-badge {
   transform: translateX(3px);
 }
 
+[data-bs-theme="dark"] .restoration-card,
+html.dark .restoration-card {
+  background: var(--bg-card, #18241D) !important;
+  border-color: var(--border-subtle) !important;
+}
+
+[data-bs-theme="dark"] .restoration-card-title,
+html.dark .restoration-card-title {
+  color: var(--text-main, #F4F6F2) !important;
+}
+
+[data-bs-theme="dark"] .restoration-card-tag,
+html.dark .restoration-card-tag {
+  color: var(--color-sage, #9BAF8A) !important;
+}
+
+[data-bs-theme="dark"] .restoration-card-desc,
+html.dark .restoration-card-desc {
+  color: var(--text-muted, #A3B5A3) !important;
+}
+
+[data-bs-theme="dark"] .restoration-specs-strip .spec-pill,
+html.dark .restoration-specs-strip .spec-pill {
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #C8DECB !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+[data-bs-theme="dark"] .mini-species-chip,
+html.dark .mini-species-chip {
+  background: rgba(255, 255, 255, 0.04) !important;
+  color: #B8D2BD !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-bs-theme="dark"] .restoration-card-link,
+html.dark .restoration-card-link {
+  color: var(--color-sage, #9BAF8A) !important;
+}
+
+[data-bs-theme="dark"] .restoration-card:hover .restoration-card-link,
+html.dark .restoration-card:hover .restoration-card-link,
+[data-bs-theme="dark"] .restoration-card-link:hover,
+html.dark .restoration-card-link:hover {
+  color: #5fe39d !important;
+}
+
 /* ================= CLEAN RESTORATION TIMELINE (SIMPLE & CLEAN ROADMAP) ================= */
 .restoration-journey-timeline {
   position: relative;
@@ -4898,6 +5010,152 @@ html.dark .standard-tile-badge {
   border-radius: 8px;
   display: inline-flex;
   align-items: center;
+}
+
+/* ==========================================================================
+   DARK MODE ENHANCEMENTS & UNIFORM CARD ALIGNMENT (ABOUT, GUIDES, RESTORATION)
+   ========================================================================== */
+
+/* 1. Clean Restoration Timeline in Dark Mode */
+[data-bs-theme="dark"] .clean-timeline-card,
+html.dark .clean-timeline-card {
+  background: var(--bg-card, #18241D) !important;
+  border-color: var(--border-subtle) !important;
+}
+
+[data-bs-theme="dark"] .timeline-clean-title,
+html.dark .timeline-clean-title {
+  color: var(--text-main, #F4F6F2) !important;
+}
+
+[data-bs-theme="dark"] .timeline-clean-desc,
+html.dark .timeline-clean-desc {
+  color: var(--text-muted, #A3B5A3) !important;
+}
+
+[data-bs-theme="dark"] .timeline-phase-badge,
+html.dark .timeline-phase-badge {
+  background: rgba(155, 175, 138, 0.18) !important;
+  color: var(--color-sage, #9BAF8A) !important;
+}
+
+[data-bs-theme="dark"] .timeline-clean-metric,
+html.dark .timeline-clean-metric {
+  background: rgba(255, 255, 255, 0.04) !important;
+  color: var(--color-sage, #9BAF8A) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* 2. About Page Ecosystem Dynamics Card & Alignment */
+.ecosystem-dynamics-title {
+  min-height: 3.25rem;
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+
+.ecosystem-dynamics-desc {
+  min-height: 5.8rem;
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+[data-bs-theme="dark"] .ecosystem-dynamics-title,
+html.dark .ecosystem-dynamics-title {
+  color: var(--text-main, #F4F6F2) !important;
+}
+
+[data-bs-theme="dark"] .ecosystem-dynamics-desc,
+html.dark .ecosystem-dynamics-desc {
+  color: var(--text-muted, #A3B5A3) !important;
+}
+
+[data-bs-theme="dark"] .about-stat-strip strong,
+html.dark .about-stat-strip strong {
+  color: #5fe39d !important;
+}
+
+[data-bs-theme="dark"] .step-num,
+html.dark .step-num {
+  background: rgba(155, 175, 138, 0.22) !important;
+  color: #5fe39d !important;
+}
+
+[data-bs-theme="dark"] .brand-mark,
+html.dark .brand-mark {
+  background: rgba(155, 175, 138, 0.18) !important;
+  color: #5fe39d !important;
+}
+
+[data-bs-theme="dark"] .text-success,
+html.dark .text-success {
+  color: #5fe39d !important;
+}
+
+[data-bs-theme="dark"] .case-study-title,
+html.dark .case-study-title {
+  color: var(--text-main, #F4F6F2) !important;
+}
+
+[data-bs-theme="dark"] .case-study-desc,
+html.dark .case-study-desc {
+  color: var(--text-muted, #A3B5A3) !important;
+}
+
+/* 3. Planting Guide Diagnostic Icon & Cards Dark Mode */
+[data-bs-theme="dark"] .diagnostic-icon-box,
+html.dark .diagnostic-icon-box {
+  background: rgba(155, 175, 138, 0.18) !important;
+  color: #5fe39d !important;
+}
+
+/* 4. Projects Empirical Telemetry Console Dark Mode */
+[data-bs-theme="dark"] .telemetry-console-card,
+html.dark .telemetry-console-card {
+  background: var(--bg-card, #18241D) !important;
+  border-color: var(--border-subtle) !important;
+}
+
+[data-bs-theme="dark"] .telemetry-title,
+html.dark .telemetry-title {
+  color: var(--text-main, #F4F6F2) !important;
+}
+
+[data-bs-theme="dark"] .telemetry-desc,
+html.dark .telemetry-desc {
+  color: var(--text-muted, #A3B5A3) !important;
+}
+
+/* 5. Home 2 Habitat Showcase Card Mathematical Line Alignment & Dark Mode Hover */
+.habitat-showcase-title {
+  min-height: 3.4rem !important;
+  display: flex !important;
+  align-items: flex-start !important;
+}
+
+.habitat-showcase-desc {
+  min-height: 4.4rem !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.habitat-perks-box {
+  min-height: 4.6rem !important;
+}
+
+[data-bs-theme="dark"] .habitat-showcase-card:hover .habitat-showcase-link,
+html.dark .habitat-showcase-card:hover .habitat-showcase-link,
+[data-bs-theme="dark"] .habitat-showcase-link:hover,
+html.dark .habitat-showcase-link:hover,
+[data-bs-theme="dark"] .habitat-showcase-card:hover .habitat-showcase-link i,
+html.dark .habitat-showcase-card:hover .habitat-showcase-link i,
+[data-bs-theme="dark"] .habitat-showcase-link:hover i,
+html.dark .habitat-showcase-link:hover i {
+  color: #5fe39d !important;
 }
 
 /* ==========================================================================
