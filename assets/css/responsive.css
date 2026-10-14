@@ -1009,5 +1009,38 @@ img, video, iframe, table {
     margin-top: 1px !important;
     white-space: nowrap !important;
   }
+
+  /* About Stat Strip on Mobile */
+  .about-stat-strip {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0.45rem !important;
+    width: 100% !important;
+  }
+
+  .about-stat-item {
+    align-items: flex-start !important;
+    text-align: left !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+  }
+
+  .about-stat-item strong {
+    font-size: 1.15rem !important;
+    margin-bottom: 0.15rem !important;
+  }
+
+  .about-stat-item span {
+    font-size: 0.68rem !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+  }
+
+  .about-stat-divider {
+    height: 34px !important;
+    margin: 0 0.15rem !important;
+  }
 }
 
