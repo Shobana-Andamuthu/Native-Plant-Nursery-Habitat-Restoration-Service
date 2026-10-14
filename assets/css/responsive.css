@@ -909,8 +909,22 @@ img, video, iframe, table {
   }
 
   .hud-bottom-specs {
-    grid-template-columns: 1fr !important;
-    gap: 4px !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+    padding: 8px 10px !important;
+    text-align: center !important;
+  }
+
+  .hud-top-bar {
+    flex-wrap: wrap !important;
+    gap: 0.4rem !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .hud-coords {
+    white-space: nowrap !important;
+    font-size: 0.72rem !important;
   }
 
   .telemetry-terminal-footer {
