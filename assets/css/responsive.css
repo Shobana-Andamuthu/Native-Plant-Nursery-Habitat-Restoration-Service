@@ -436,6 +436,9 @@
   .product-footer .btn-botanical,
   .product-footer .btn-sm-botanical,
   .product-footer a.btn-botanical,
+  .guild-bundle-footer .btn-botanical,
+  .guild-bundle-footer .guild-order-btn,
+  .guild-bundle-footer a.btn-botanical,
   .header-actions .btn-botanical,
   .header-actions a.btn-botanical {
     width: auto !important;
@@ -443,6 +446,7 @@
     padding: 0.42rem 0.95rem !important;
     font-size: 0.85rem !important;
     flex-shrink: 0 !important;
+    white-space: nowrap !important;
   }
 
   .product-footer {
@@ -552,12 +556,16 @@
 
   .product-footer .btn-botanical,
   .product-footer .btn-sm-botanical,
-  .product-footer a.btn-botanical {
+  .product-footer a.btn-botanical,
+  .guild-bundle-footer .btn-botanical,
+  .guild-bundle-footer .guild-order-btn,
+  .guild-bundle-footer a.btn-botanical {
     width: auto !important;
     min-width: 72px;
     padding: 0.35rem 0.75rem !important;
     font-size: 0.78rem !important;
     flex-shrink: 0 !important;
+    white-space: nowrap !important;
   }
 
   @media (max-width: 319.98px) {
@@ -1044,3 +1052,22 @@ img, video, iframe, table {
   }
 }
 
+
+/* Contact Page: Map & FAQ Responsive Tweaks */
+@media (max-width: 767.98px) {
+  .map-frame-container,
+  .map-frame-container iframe {
+    height: 320px !important;
+    min-height: 320px !important;
+  }
+
+  .botanical-accordion .accordion-button {
+    font-size: 0.94rem !important;
+    padding: 1rem 1.15rem !important;
+  }
+
+  .botanical-accordion .accordion-body {
+    padding: 0.9rem 1.15rem 1.15rem 1.15rem !important;
+    font-size: 0.88rem !important;
+  }
+}
